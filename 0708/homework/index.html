@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../includes/jquery-3.1.1.js"></script>
+</head>
+<body>
+<script>
+    $(function () {
+        // 按回车登录
+        $(document).keypress(function (e) {
+            if (e.keyCode == 13){
+                $('#sub').trigger('click');
+            }
+        });
+        $('#sub').click(function () {
+            var name = $('#name').val();
+            var pwd = $('#pwd').val();
+            if(name=='' || pwd==''){
+                alert('请输入信息');
+            } else{
+                $.post(
+                    'data.php',
+                    function (data) {
+                        alert(data);
+                        if (data == true){
+                            $.ajax({
+                                type:'post',
+                                url:'data.php',
+                                data:{'name':name,'pwd':pwd},
+                                success:function (data) {
+
+                                }
+                            })
+                        }
+                    }
+                )
+            }
+        })
+    })
+</script>
+
+    <form action="" method="post">
+        用户名：
+        <input type="text" id="name" name="name" required><span></span><br />
+        密&emsp;码：
+        <input type="password" id="pwd" name="pwd" ><span></span><br />
+
+        <input type="submit" name="sub" id="sub" value="登录">
+    </form>
+
+</body>
+</html>

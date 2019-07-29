@@ -1,0 +1,42 @@
+
+    <div class="bg_b">
+        <div class="pst"> 您当前的位置：<a href="index.html" >首页</a>><a
+                href="case.html" >合作案例</a></div>
+    </div>
+    <div class="scd clearfix">
+        <div class="scd_l">
+            <div class="l_name"><img src="__STATIC__/images/name_6.png"  /><i>&nbsp;</i></div>
+            <ul class="s_nav">
+                {foreach $case_data.sub_nav as $item}
+                    <li class="{if $case_data.cate == $item.n_id}on{/if}"><a href="/index/cases/cases/category/{$case_data.category}/cate/{$item.n_id}">{$item.nav_name}</a></li>
+                {/foreach}
+<!--                <li class="on"><a href="case.html" >工装案例</a></li>-->
+<!--                <li><a href="case2.html" >家装案例</a></li>-->
+<!--                <li><a href="case3.html" >其他案例</a></li>-->
+            </ul>
+        </div>
+        <div class="scd_r">
+            <div class="r_top"><span>合作案例</span></div>
+            <div class="scd_m">
+                {foreach $case_data.case as $item}
+                <dl class="news clearfix">
+                    <dt>
+                        <a href="case_info.html" ><img src="__STATIC__/images/case/{$item.c_img}" alt="" /></a>
+                    </dt>
+                    <dd>
+                        <div class="title">
+                            <p><a href="case_info.html" >{$item.c_title}</a></p><span>{$item.c_time|date="Y-m-d",###}</span>
+                        </div>
+                        <div class="des">{$item.c_content}</div>
+                        <div class="more"><a href="case_info.html" >查看详情>></a></div>
+                    </dd>
+                </dl>
+                {/foreach}
+                <div class="space_hx">&nbsp;</div>
+                <div class="pages">
+<!--                    {$case_data.page}-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="space_hx">&nbsp;</div>

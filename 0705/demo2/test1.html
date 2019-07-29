@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            function myajax(url,fnSuc) {
+                var ajax = new XMLHttpRequest();
+                ajax.onreadystatechange = function(){
+                    if (ajax.readyState == 4 && ajax.status == 200){
+                        fnSuc(ajax.responseText);
+                    }
+                }
+                ajax.open('get',url,true);
+                ajax.send(null);
+            }
+            var user = document.getElementById('user');
+            var info = user.value;
+            info = encodeURIComponent(info);
+            user.onblur = function () {
+                myajax('check.php?name='+info+'&t='+new Date().getTime(),function (str) {
+                    alert(str)
+                });
+            }
+        }
+
+    </script>
+</head>
+<body>
+    用户名：<input type="text" name="user" id="user">
+</body>
+</html>

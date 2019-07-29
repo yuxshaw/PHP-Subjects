@@ -1,0 +1,25 @@
+/* 文本下部内容 */
+article .bottom h2{
+    font-size: 30px;
+    color: #333333;
+    line-height: 52px;
+    border-bottom: 3px solid #1647a1;
+}
+article .bottom table{
+    margin: 36px;
+    line-height: 30px;
+}
+article .bottom table>tr>td{
+    text-indent: 1em;
+}
+article .bottom table .submit{
+    width: 55px;
+    height: 47px;
+    background-color: #1647a1;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #ffffff;
+    box-shadow: 0 0 1px 1px #092d6e;
+    border: 1px solid #092d6e;
+    cursor: pointer;
+}

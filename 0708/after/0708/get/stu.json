@@ -1,0 +1,15 @@
+{
+  "student": [
+    {
+      "name": "Tom",
+      "age": 20,
+      "sex": "男"
+    },
+    {
+      "name": "Jack",
+      "age": 20,
+      "sex": "男"
+    }
+  ]
+
+}

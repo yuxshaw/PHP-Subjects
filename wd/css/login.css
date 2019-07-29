@@ -1,0 +1,64 @@
+/* content */
+.content{
+    height: 888px;
+}
+
+
+/* 文本中部内容 */
+article .center{
+    margin-top: 48px;
+}
+article .center .login{
+    width: 333px;
+    height: 220px;
+    border-bottom: 1px solid #1647a1;
+}
+article .center .login>div{
+    width: 100%;
+    border-bottom: 3px solid #1647a1;
+}
+article .center .login h2{
+    width: 100%;
+    font-size: 36px;
+    color: #333333;
+    line-height: 48px;
+    margin-top: 38px;
+    -webkit-box-reflect:below -26px -webkit-linear-gradient(transparent,transparent 50%,rgba(0,0,0,.4));
+}
+article .center .login h2>span{
+    font-size: 30px;
+}
+article .center .login table{
+    width: 100%;
+    text-align: center;
+    margin-top: 24px;
+    line-height: 30px;
+}
+
+article .center .login table .inp{
+    width: 186px;
+}
+article .center .login table .submit{
+    width: 55px;
+    height: 47px;
+    background-color: #1647a1;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #ffffff;
+    box-shadow: 0 0 1px 1px #092d6e;
+    border: 1px solid #092d6e;
+    cursor: pointer;
+}
+article .bottom{
+    width: 100%;
+    border-bottom: 1px dashed #dbdbdb;
+    margin-top: 70px;
+    height: 60px;
+}
+article .bottom>p{
+    font-size: 11px;
+    color: #666666;
+    line-height: 20px;
+    background: url(../images/sjx.gif) no-repeat left center;
+    text-indent: 1em;
+}

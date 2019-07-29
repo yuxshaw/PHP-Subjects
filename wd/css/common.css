@@ -1,0 +1,258 @@
+/* 公共样式 */
+.header,
+.content,
+.footer{
+    width: 1024px;
+    margin: 0 auto;
+    /* border: thin solid #f00; */
+}
+/* 头部开始 */
+.header{
+    height: 77px;
+}
+.header .logo{
+    width: 144px;
+    height: 77px;
+    margin-left: 20px;
+}
+.header .logo img {
+    margin-top: 26px;
+}
+/* 导航部分 */
+.header .nav-box{
+    width: 600px;
+    height: 77px;
+}
+.header .nav-box .login{
+    width: 222px;
+    height: 19px;
+    background-image: url(../images/login-bar.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-right: 55px;
+    color: #fff;
+}
+.header .nav-box .login .box{
+    width: 70%;
+    height: 100%;
+    margin-left: 60px;
+    line-height: 14px; /*行高*/
+}
+.header .nav-box .login a{
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none; 
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    border-right: 1px solid #fff; 
+}
+/* 一二级导航 */
+.header .nav-box .nav{
+    /* background-color: #0c0; */
+    margin-top: 13px;
+}
+.header .nav-box .nav > li{
+    width: 115px;
+    height: 14px;
+    float: left;
+    /* background-color: #0cf; */
+    border-right:1px solid #d8d8d8;
+    text-align: center;
+    line-height: 12px;
+    position: relative;
+}
+/* 去掉最后一个li的右边框 */
+.header .nav-box .nav > li:last-of-type{
+    border: none;
+}
+.btn-active{
+    color: #2050a9!important;
+}
+/* 一级导航 */
+.header .nav-box .nav > li > a{
+    text-decoration: none;
+    color: #646464;
+    font-size: 14px;
+}
+.header .nav-box .nav > li > a:hover{
+    color: #2050a9;
+}
+.header .nav-box .nav-sub{
+    width: 500px;
+    height: 20px;
+    /* background-color: #0f0; */
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+.header .nav-box .nav-sub > li{
+    background:url(../images/nab-bg.jpg);
+    width: 76px;
+    float: left;
+}
+.header .nav-box .nav-sub > li > a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+}
+/* 二级导航圆角 */
+.header .nav-box .nav-sub >li:first-child{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.header .nav-box .nav-sub >li:last-child{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.header .nav .nav-sub{
+    display: none;
+}
+/* 临时 */
+/* .header .nav > li:nth-child(5) > .nav-sub{
+    display: block;
+} */
+.header .nav > li:nth-child(3) .nav-sub{
+    left: -40px;
+}
+.header .nav > li:nth-child(4) .nav-sub{
+    left: -130px;
+}
+.header .nav > li:nth-child(5) .nav-sub{
+    left: -250px;
+}
+/* 头部结束 */
+
+
+
+
+
+/* 内容样式 */
+.content{
+    box-shadow: 0px 16px 16px -4px #ededed;
+}
+/* banner样式 */
+.content .banner{
+    position: relative;
+    width: 100%;
+}
+/* 吊饰 */
+.content .banner .rope{
+    position: absolute;
+    bottom:-19%;
+    margin-bottom: -4px;
+    left: 110px;
+    height: 53px;
+}
+/* 侧边栏 */
+aside{
+    width: 176px;
+    padding-bottom: 40px;
+    border: 2px solid #003391;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 35px 0 0 40px;
+    font-family: "宋体";
+}
+
+aside p, aside h2, aside ul{
+    width: 91%;
+    margin: auto;
+}
+
+aside p{
+    font-size: 12px;
+    color: #999999;
+    margin-top: 10px;
+}
+
+aside h2{
+    font-size: 24px;
+    line-height: 36px;
+    border-bottom: 3px solid #cccccc;
+}
+
+aside li{
+    line-height: 32px;
+    background: url(../images/video.png) no-repeat left center;
+    background-size: 8%;
+    text-indent: 1.2em;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+aside li a{
+    font-size: 12px;
+    color: #333333;
+}
+
+aside li a:hover{
+    color: #1a4292;
+}
+
+/* 文本内容样式 */
+article{
+    width: 712px;
+    margin: 15px 0 0 60px;
+    font-family: "宋体";
+}
+article .top{
+    width: 100%;
+    line-height: 30px;
+    border-bottom: 1px solid #e5e5e5;
+}
+article .top>h2{
+    font-size: 18px;
+    color: #333333;
+    background: url(../images/bar-bg.png) no-repeat left center;
+    text-indent: 0.5em;
+}
+article .top>span{
+    font-size: 11px;
+    color: #999999;
+    line-height: 30px;
+}
+/* 上部内容结束 */
+
+
+
+
+
+
+
+
+
+/* 页脚样式 */
+.footer .left{
+    margin-top: 31px;
+    margin-left: 27px;
+    margin-bottom: 30px;
+}
+
+.footer .left p{
+    font-size: 12px;
+    color: #666666;
+    line-height: 18px;
+}
+
+.footer .right{
+    margin-top: 32px;
+    margin-right: 57px;
+    margin-bottom: 24px;
+}
+
+.footer .right select{
+    width: 110px;
+    height: 20px;
+    border: 1px solid #a8a9ae;
+    font-size: 12px;
+    line-height: 14px;
+    text-indent: 20px;
+    -webkit-appearance: none;
+    background: url(../images/selset_bg.gif) no-repeat 90% center;
+}
+
+/*分类信息激活状态*/
+.active{
+    color: #f00;
+}

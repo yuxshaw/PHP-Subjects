@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>json test</title>
+    <script src="../jquery-3.1.1.js"></script>
+    <script>
+        $(function () {
+            $('#btn').click(function () {
+                $.get('create_json.php',function (data) {
+                    //alert(data); //字符串
+
+                    //将json格式字符串转为json对象
+                    var jsonObj = JSON.parse(data);
+
+                    var name1 = jsonObj.name1;
+                    var name2 = jsonObj.name2;
+                    var name3 = jsonObj.name3;
+
+                    var str = '<ul style="list-style-type: none;">'+
+                        '<li>'+name1+'</li>'+
+                        '<li>'+name2+'</li>'+
+                        '<li>'+name3+'</li>'+
+                        '</ul>';
+                    $('#box').html(str);
+                })
+
+            });
+
+
+            $('#btn1').click(function () {
+                $.get(
+                    'https://www.tianqiapi.com/api/?='+(new Date()),
+                    {version:"v1",city:"上海"},
+                    function (info) {
+                        console.log(info);
+                        var data = info.data[0];
+                        var cityid = info.cityid;
+                        var city = info.city;
+                        var air_level = data.air_level;
+                        var air_tips = data.air_tips;
+                        var week = data.week;
+                        var wea = data.wea;
+                        var tem = data.tem;
+                        var tem1 = data.tem1;
+                        var tem2 = data.air_tips;
+
+                        // $('#level').html(air_level);
+                        // $('#tip').html(air_tips);
+                        // $('#tem').html(tem);
+                        var skin_src = "https://tianqiapi.com/api.php?style=ts&skin=cherry&cityid="+cityid+"&city="+city;
+                        // var skin_src = "https://tianqiapi.com/api.php?style=tx&skin=cherry&cityid="+cityid+"&city="+city;
+                        $('#frame').attr("src",skin_src);
+                    }
+                )
+            })
+        })
+    </script>
+</head>
+<body>
+<input type="button" id="btn" value="获取">
+<div id="box"></div>
+<input type="button" id="btn1" value="获取">
+<div id="box1">
+<!--    <div>空气质量：<span id="level"></span></div>-->
+<!--    <div>提示：<span id="tip"></span></div>-->
+<!--    <div>温度：<span id="tem"></span></div>-->
+</div>
+<iframe id="frame" scrolling="no" src="" frameborder="0" width="325" height="220" allowtransparency="true"></iframe>
+<!--<iframe id="frame" scrolling="no" src="" frameborder="0" width="100%" height="30" allowtransparency="true"></iframe>-->
+</body>
+</html>

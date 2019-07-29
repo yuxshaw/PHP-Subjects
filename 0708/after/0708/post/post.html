@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>post</title>
+    <script src="../jquery-3.1.1.js"></script>
+    <script>
+        $(function () {
+            $('#user').change(function () {
+                var user = $(this).val();
+                // alert(user);
+                $.post('post.php?='+(new Date()),{name:user},function (info) {
+                    //alert(info);
+                    if(info==0){
+                        $('#user').next('span').html("<span style='color:red;'>用户名已存在！</span>");
+                        return false;
+                    }
+                    if(info==1){
+                        $('#user').next('span').html("<span style='color:green;'>用户名可以使用！</span>");
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <form action="" method="post">
+        用户名：
+        <input type="text" id="user" name="user" required><span></span><br />
+        邮&emsp;箱：
+        <input type="email" id="email" name="email" ><span></span><br />
+
+        <input type="submit" name="sub" id="sub">
+    </form>
+</body>
+</html>

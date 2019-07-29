@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    
+    <script>
+        window.onload = function(){
+            var btn1 = document.getElementById('btn1');
+            var box = document.getElementById('box');
+            btn1.onclick = function(){
+                // 1.创建 XMLHttpRequest 对象
+                if(window.XMLHttpRequest){
+                    var ajax = new XMLHttpRequest();
+                }else{
+                    // 兼容 IE5 IE6
+                    var ajax = new ActiveXObject();
+                }
+                /**
+                 * 2.创建一个请求
+                 *      open(方法，地址，是否异步)
+                 */
+                ajax.open('GET','Ajax.php?name=Rose',true);
+                // 3.发送请求
+                ajax.send();
+                // 4.捕获请求的状态
+                ajax.onreadystatechange = function(){
+                    if(ajax.readyState == 4){   // 5.判断请求状态 readyState
+                        // 6.判断请求的结果
+                        if(ajax.status == 200){
+                            // box.innerText = ajax.responseText;
+                            var info = ajax.responseText;
+                            if (info == 1){
+                                box.innerText = 'male';
+                            }else if(info == 0){
+                                box.innerText = 'female';
+                            }
+                        }else{
+                            alert("啧，请求失败了！\n"+ajax.status);
+                        }
+                    }
+                }
+            }
+        }    
+    </script>
+    
+    <input id="btn1" type="button" value="获取">
+    <div id="box">
+
+    </div>
+
+</body>
+</html>

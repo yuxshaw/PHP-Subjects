@@ -1,0 +1,225 @@
+<div class="container theme-showcase" role="main">
+
+    <p>
+        <a href="/index/index/index/category/{$datas.cid}/cate/0" class="btn btn-sm btn-default {if $datas.cate == 0 }active{/if}" type="button">全部</a>
+        {foreach $datas['sub_nav'] as $item}
+            <a href="/index/index/index/category/{$item.pid}/cate/{$item.cid}" class="btn btn-sm btn-default {if $datas.cate == $item.cid }active{/if}" type="button">{$item.cname}</a>
+        {/foreach}
+        <!--        <button class="btn btn-sm btn-default" type="button">互联网</button>-->
+        <!--        <button class="btn btn-sm btn-default" type="button">数码</button>-->
+        <!--        <button class="btn btn-sm btn-default" type="button">IT</button>-->
+        <!--        <button class="btn btn-sm btn-default" type="button">电信</button>-->
+    </p>
+
+    <div class="row all-event-list mt20">
+
+        {foreach $datas.article as $item}
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="widget-event">
+                <a href="/index/article/index/cate/{$item.cid}/art/{$item.aid}"><img class="widget-event__banner lazy" src="__IMG__{$item.a_img}"></a>
+                <div class="widget-event__info">
+                    <h2 class="h4 title"><a href="/index/article/index/cate/{$item.cid}/art/{$item.aid}">{$item.title}</a></h2>
+                    <ul class="widget-event__meta">
+                        <li>时间：{$item.pubtime|date="Y-m-d H:i:s",###}</li>
+                    </ul>
+                    <a class="btn btn-default btn-sm" href="/index/article/index/cate/{$item.cid}/art/{$item.aid}">查看</a>
+                </div>
+            </div>
+        </div>
+        {/foreach}
+
+<!--        <div class="col-md-3 col-sm-4 col-xs-12">-->
+<!--            <div class="widget-event">-->
+<!--                <a href="#"><img class="widget-event__banner lazy" src="__IMG__article_02.png"></a>-->
+<!--                <div class="widget-event__info">-->
+<!--                    <h2 class="h4 title"><a href="#">2015中国旅游极客开发大赛</a></h2>-->
+<!--                    <ul class="widget-event__meta">-->
+<!--                        <li>时间：2015-09-19</li>-->
+<!--                    </ul>-->
+<!--                    <a class="btn btn-default btn-sm" href="#">查看</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-3 col-sm-4 col-xs-12">-->
+<!--            <div class="widget-event">-->
+<!--                <a href="#"><img class="widget-event__banner lazy" src="__IMG__article_03.png"></a>-->
+<!--                <div class="widget-event__info">-->
+<!--                    <h2 class="h4 title"><a href="#">高升云道—云时代的智能硬件和物联网创业</a></h2>-->
+<!--                    <ul class="widget-event__meta">-->
+<!--                        <li>时间：2015-09-19</li>-->
+<!--                    </ul>-->
+<!--                    <a class="btn btn-default btn-sm" href="#">查看</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-3 col-sm-4 col-xs-12">-->
+<!--            <div class="widget-event">-->
+<!--                <a href="#"><img class="widget-event__banner lazy" src="__IMG__article_04.png"></a>-->
+<!--                <div class="widget-event__info">-->
+<!--                    <h2 class="h4 title"><a href="#">数据重构未来 - 七牛·数据时代峰会</a></h2>-->
+<!--                    <ul class="widget-event__meta">-->
+<!--                        <li>时间：2015-09-19</li>-->
+<!--                    </ul>-->
+<!--                    <a class="btn btn-default btn-sm" href="#">查看</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-3 col-sm-4 col-xs-12">-->
+<!--            <div class="widget-event">-->
+<!--                <a href="#"><img class="widget-event__banner lazy" src="__IMG__article_01.png"></a>-->
+<!--                <div class="widget-event__info">-->
+<!--                    <h2 class="h4 title"><a href="#">高速+智能→未来</a></h2>-->
+<!--                    <ul class="widget-event__meta">-->
+<!--                        <li>时间：2015-09-19</li>-->
+<!--                    </ul>-->
+<!--                    <a class="btn btn-default btn-sm" href="#">查看</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-3 col-sm-4 col-xs-12">-->
+<!--            <div class="widget-event">-->
+<!--                <a href="#"><img class="widget-event__banner lazy" src="__IMG__article_02.png"></a>-->
+<!--                <div class="widget-event__info">-->
+<!--                    <h2 class="h4 title"><a href="#">2015中国旅游极客开发大赛</a></h2>-->
+<!--                    <ul class="widget-event__meta">-->
+<!--                        <li>时间：2015-09-19</li>-->
+<!--                    </ul>-->
+<!--                    <a class="btn btn-default btn-sm" href="#">查看</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-3 col-sm-4 col-xs-12">-->
+<!--            <div class="widget-event">-->
+<!--                <a href="#"><img class="widget-event__banner lazy" src="__IMG__article_03.png"></a>-->
+<!--                <div class="widget-event__info">-->
+<!--                    <h2 class="h4 title"><a href="#">高升云道—云时代的智能硬件和物联网创业</a></h2>-->
+<!--                    <ul class="widget-event__meta">-->
+<!--                        <li>时间：2015-09-19</li>-->
+<!--                    </ul>-->
+<!--                    <a class="btn btn-default btn-sm" href="#">查看</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-3 col-sm-4 col-xs-12">-->
+<!--            <div class="widget-event">-->
+<!--                <a href="#"><img class="widget-event__banner lazy" src="__IMG__article_04.png"></a>-->
+<!--                <div class="widget-event__info">-->
+<!--                    <h2 class="h4 title"><a href="#">数据重构未来 - 七牛·数据时代峰会</a></h2>-->
+<!--                    <ul class="widget-event__meta">-->
+<!--                        <li>时间：2015-09-19</li>-->
+<!--                    </ul>-->
+<!--                    <a class="btn btn-default btn-sm" href="#">查看</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-3 col-sm-4 col-xs-12">-->
+<!--            <div class="widget-event">-->
+<!--                <a href="#"><img class="widget-event__banner lazy" src="__IMG__article_01.png"></a>-->
+<!--                <div class="widget-event__info">-->
+<!--                    <h2 class="h4 title"><a href="#">高速+智能→未来</a></h2>-->
+<!--                    <ul class="widget-event__meta">-->
+<!--                        <li>时间：2015-09-19</li>-->
+<!--                    </ul>-->
+<!--                    <a class="btn btn-default btn-sm" href="#">查看</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-3 col-sm-4 col-xs-12">-->
+<!--            <div class="widget-event">-->
+<!--                <a href="#"><img class="widget-event__banner lazy" src="__IMG__article_02.png"></a>-->
+<!--                <div class="widget-event__info">-->
+<!--                    <h2 class="h4 title"><a href="#">2015中国旅游极客开发大赛</a></h2>-->
+<!--                    <ul class="widget-event__meta">-->
+<!--                        <li>时间：2015-09-19</li>-->
+<!--                    </ul>-->
+<!--                    <a class="btn btn-default btn-sm" href="#">查看</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-3 col-sm-4 col-xs-12">-->
+<!--            <div class="widget-event">-->
+<!--                <a href="#"><img class="widget-event__banner lazy" src="__IMG__article_03.png"></a>-->
+<!--                <div class="widget-event__info">-->
+<!--                    <h2 class="h4 title"><a href="#">高升云道—云时代的智能硬件和物联网创业</a></h2>-->
+<!--                    <ul class="widget-event__meta">-->
+<!--                        <li>时间：2015-09-19</li>-->
+<!--                    </ul>-->
+<!--                    <a class="btn btn-default btn-sm" href="#">查看</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-3 col-sm-4 col-xs-12">-->
+<!--            <div class="widget-event">-->
+<!--                <a href="#"><img class="widget-event__banner lazy" src="__IMG__article_04.png"></a>-->
+<!--                <div class="widget-event__info">-->
+<!--                    <h2 class="h4 title"><a href="#">数据重构未来 - 七牛·数据时代峰会</a></h2>-->
+<!--                    <ul class="widget-event__meta">-->
+<!--                        <li>时间：2015-09-19</li>-->
+<!--                    </ul>-->
+<!--                    <a class="btn btn-default btn-sm" href="#">查看</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-3 col-sm-4 col-xs-12">-->
+<!--            <div class="widget-event">-->
+<!--                <a href="#"><img class="widget-event__banner lazy" src="__IMG__article_01.png"></a>-->
+<!--                <div class="widget-event__info">-->
+<!--                    <h2 class="h4 title"><a href="#">高速+智能→未来</a></h2>-->
+<!--                    <ul class="widget-event__meta">-->
+<!--                        <li>时间：2015-09-19</li>-->
+<!--                    </ul>-->
+<!--                    <a class="btn btn-default btn-sm" href="#">查看</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-3 col-sm-4 col-xs-12">-->
+<!--            <div class="widget-event">-->
+<!--                <a href="#"><img class="widget-event__banner lazy" src="__IMG__article_02.png"></a>-->
+<!--                <div class="widget-event__info">-->
+<!--                    <h2 class="h4 title"><a href="#">2015中国旅游极客开发大赛</a></h2>-->
+<!--                    <ul class="widget-event__meta">-->
+<!--                        <li>时间：2015-09-19</li>-->
+<!--                    </ul>-->
+<!--                    <a class="btn btn-default btn-sm" href="#">查看</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-3 col-sm-4 col-xs-12">-->
+<!--            <div class="widget-event">-->
+<!--                <a href="#"><img class="widget-event__banner lazy" src="__IMG__article_03.png"></a>-->
+<!--                <div class="widget-event__info">-->
+<!--                    <h2 class="h4 title"><a href="#">高升云道—云时代的智能硬件和物联网创业</a></h2>-->
+<!--                    <ul class="widget-event__meta">-->
+<!--                        <li>时间：2015-09-19</li>-->
+<!--                    </ul>-->
+<!--                    <a class="btn btn-default btn-sm" href="#">查看</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-3 col-sm-4 col-xs-12">-->
+<!--            <div class="widget-event">-->
+<!--                <a href="#"><img class="widget-event__banner lazy" src="__IMG__article_04.png"></a>-->
+<!--                <div class="widget-event__info">-->
+<!--                    <h2 class="h4 title"><a href="#">数据重构未来 - 七牛·数据时代峰会</a></h2>-->
+<!--                    <ul class="widget-event__meta">-->
+<!--                        <li>时间：2015-09-19</li>-->
+<!--                    </ul>-->
+<!--                    <a class="btn btn-default btn-sm" href="#">查看</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+    </div>
+
+
+    <div class="text-center">
+        <ul class="pagination">
+            {$datas.page}
+        </ul>
+    </div>
+
+
+</div>
+
+

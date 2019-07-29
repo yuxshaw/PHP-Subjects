@@ -1,0 +1,327 @@
+/* banner样式 */
+.banner{
+    width: 100%;
+    background: url(../images/banner_bg.png) repeat center center;
+    background-size: 100%;
+}
+
+.banner .content{
+    width: 61.1%;
+    padding: 7%;
+    margin-left: 15%;
+}
+
+.banner .content .img{
+    float: left;
+    width: 43%;
+    margin-bottom: 7%;
+}
+
+.banner .content .font{
+    float: left;
+    width: 54%;
+    margin-top: 7%;
+    margin-left: 3%;
+}
+
+.banner .content .font h2{
+    font-size: 36px;
+    color: #fff7d4;
+}
+
+.banner .content .font span{
+    font-size: 36px;
+    color: #fff7d4;
+    font-weight: lighter;
+}
+
+.banner .content .font p{
+    font-size: 14px;
+    color: #fff7d4;
+    font-weight: lighter; 
+    margin-top: 4%;
+}
+
+.banner .content .font a{
+    display: block;
+    width: 28.7%;
+    height: 44px;
+    border: 2px solid #ffffff;
+    font-size: 18px;
+    color: #fff7d4;
+    text-align: center;
+    line-height: 44px;
+    margin-top: 4%;
+}
+
+.banner .status{
+    width: 100%;
+    margin-bottom: 3%;
+
+}
+
+.banner .status ul{
+    width: 150px;
+    margin: 0 auto;
+}
+
+.banner .status ul li{
+    float: left;
+    width: 40px;
+    height: 5px;
+    margin-left: 10px;
+}
+
+.banner .status ul li a{
+    display: block;
+    width: 40px;
+    height: 5px;
+    background-color: #f9dd6a;
+}
+
+.banner .status ul li a:hover{
+    background-color: #ffffff;
+}
+
+/* content内容样式 */
+.content{
+    width: 100%;
+}
+
+/* ci样式 */
+.content .ci{
+    width: 100%;
+    background-color: #ffffff;
+    padding-bottom: 30%;
+}
+
+.content .ci img{
+    float: left;
+    margin-top: 4%;
+    margin-left: 18%;
+}
+
+.content .ci .con{
+    float: left;
+    width: 36.1%;
+    margin-top: 7%;
+    margin-left: 8%;
+}
+
+.content .ci .con h2{
+    font-size: 30px;
+    color: #5b5b5b;
+    font-weight: lighter;
+}
+
+.content .ci .con img{
+    margin: 2% 0%;
+}
+
+.content .ci .con span{
+    display: block;
+    margin: 5% 0%;
+    font-size: 18px;
+    color: #999999;
+}
+
+.content .ci .con p{
+    font-size: 16px;
+    color: #666666;
+}
+
+/* coi样式 */
+.content .coi{
+    width: 100%;
+    background-color: #f3f3f3;
+    padding-bottom: 30%;
+}
+
+.content .coi .con{
+    float: left;
+    width: 36.1%;
+    margin-top: 8%;
+    margin-left: 18%;
+}
+
+.content .coi .con h2{
+    font-size: 30px;
+    color: #5b5b5b;
+    font-weight: lighter;
+}
+
+.content .coi .con img{
+    margin: 2% 0%;
+}
+
+.content .coi .con span{
+    display: block;
+    margin: 5% 0%;
+    font-size: 18px;
+    color: #999999;
+}
+
+.content .coi .con p{
+    font-size: 16px;
+    color: #666666;
+}
+
+.content .coi img{
+    float: left;
+    margin-top: 2%;
+    margin-left: 8%;
+}
+
+/* sob样式 */
+.content .sob{
+    width: 100%;
+    background-color: #ffffff;
+    padding-bottom: 30%;
+}
+
+.content .sob img{
+    float: left;
+    margin-top: 2%;
+    margin-left: 18%;
+}
+
+.content .sob .con{
+    float: left;
+    width: 36.1%;
+    margin-top: 7%;
+    margin-left: 8%;
+}
+
+.content .sob .con h2{
+    font-size: 30px;
+    color: #5b5b5b;
+    font-weight: lighter;
+}
+
+.content .sob .con img{
+    margin: 2% 0%;
+}
+
+.content .sob .con span{
+    display: block;
+    margin: 5% 0%;
+    font-size: 18px;
+    color: #999999;
+}
+
+.content .sob .con p{
+    font-size: 16px;
+    color: #666666;
+}
+
+/* cd样式 */
+.content .cd{
+    width: 100%;
+    background-color: #f3f3f3;
+    padding-bottom: 30%;
+}
+
+.content .cd .con{
+    float: left;
+    width: 36.1%;
+    margin-top: 8%;
+    margin-left: 18%;
+}
+
+.content .cd .con h2{
+    font-size: 30px;
+    color: #5b5b5b;
+    font-weight: lighter;
+}
+
+.content .cd .con img{
+    margin: 2% 0%;
+}
+
+.content .cd .con span{
+    display: block;
+    margin: 5% 0%;
+    font-size: 18px;
+    color: #999999;
+}
+
+.content .cd .con p{
+    font-size: 16px;
+    color: #666666;
+}
+
+.content .cd img{
+    float: left;
+    margin-top: 2%;
+    margin-left: 8%;
+}
+
+
+/* fd样式 */
+.content .fd{
+    width: 100%;
+}
+
+.content .fd .title{
+    width: 18.8%;
+    padding-top: 2%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content .fd .title h2{
+    font-size: 30px;
+    color: #5b5b5b;
+    font-weight: lighter;
+}
+
+.content .fd .title img{
+    margin-top: 3%;
+}
+
+.content .fd .title p{
+    font-size: 18px;
+    color: #999999;
+    font-weight: lighter;
+}
+
+.content .fd .list{
+    width: 70%;
+    margin: 2% auto;
+}
+
+.content .fd .list ul{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content .fd .list ul li{
+    float: left;
+    text-align: center;
+    width: 33.3%;
+}
+
+.content .fd .list ul li span{
+    display: block;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 18px;
+    color: #636363;
+}
+
+.content .fd .list ul li p{
+    margin-top: 2%;
+    font-size: 12px;
+    text-align: center;
+    color: #636363;
+}
+
+.content .fd .list ul li:hover , .content .fd .list ul li:hover>span , .content .fd .list ul li:hover>p{
+    cursor: pointer;
+    color: #dab313;
+}
+
+.content .fd .imgs{
+    margin-top: 4.5%;
+    margin-left: 14.3%;
+}

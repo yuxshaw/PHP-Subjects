@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./includes/js/jquery-3.1.1.js"></script>
+</head>
+<body>
+<input type="button" id="btn1" value="获取">
+<div id="box"></div>
+<script>
+    $(function () {
+        $('#btn1').click(function () {
+            /* load 方法 */
+            $('#box').load('./aa.txt');
+        });
+    })
+</script>
+</body>
+</html>

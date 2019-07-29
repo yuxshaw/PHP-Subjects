@@ -1,0 +1,219 @@
+/* 轮播图 */
+.banner .slide{
+    background-color: #2b80d9;
+}
+/* laya引擎模块样式 */
+#laya-engine{
+    padding: 100px 0 90px;
+    background-color: #fbfaf7;
+    border-bottom: 1px solid #eaeaee;
+}
+#laya-engine .title{
+    margin-bottom: 80px;
+}
+#laya-engine .title>h1{
+    font-size: 48px;
+    color: #0078d7;
+    font-weight: bold;
+}
+#laya-engine .title>h2{
+    font-size: 30px;
+    color: #666666;
+}
+#laya-engine .engine-feature>div{
+    margin-bottom: 36px;
+}
+#laya-engine .media-left a{
+    display: block;
+    margin-left: 10px;
+    width: 64px;
+    height: 64px;
+    background-color: #0078d7;
+    border-radius: 5px;
+    margin-right: 5px;
+    transition: transform 1.2s,background-color 1.2s linear;
+}
+#laya-engine .media-left a:hover{
+    transform: rotateY(360deg);
+    background-color: #ccc;
+}
+#laya-engine .media-body h4{
+    font-size: 20px;
+    color: #333333;
+    font-family: '微软雅黑';
+}
+#laya-engine .media-body p{
+    font-size: 14px;
+    color: #666666;
+    font-family: '微软雅黑';
+    line-height: 24px;
+}
+
+/* laya引擎背景 */
+#laya-engine{
+    background-image:url(../images/flash-bg.jpg);
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:768px) {
+    #laya-engine{
+        background-image: none;
+    }
+}
+@media screen and (max-width:992px) and (min-width:768px){
+    #laya-engine{
+        background-position: 500px bottom;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+    #laya-engine{
+        background-position: right bottom;
+    }
+}
+@media screen and (min-width:1200px){
+    #laya-engine{
+        background-position: 1000px bottom;
+    }
+}
+
+
+/* layabox优势模块样式 */
+#laya-advantage{
+    padding: 100px 0 90px;
+}
+#laya-advantage .adv-box{
+    margin-top: 10px;
+}
+#laya-advantage .adv-img{
+    margin-top: 72px;
+}
+#laya-advantage .adv-detail h1{
+    font-size: 48px;
+    color: #8fc31f;
+    font-weight: bold;
+    font-family: '微软雅黑';
+    margin-bottom: 44px;
+}
+#laya-advantage .adv-detail .adv-icon{
+    width: 54px;
+    height: 54px;
+    background-color: #8fc31f;
+    padding: 0;
+    border-radius: 50%;
+    transition: transform 1.2s;
+}
+#laya-advantage .adv-detail .adv-icon:hover{
+    transform: rotate(360deg);
+}
+#laya-advantage .adv-detail .adv-icon img{
+    width: 54px;
+    height: 54px;
+}
+#laya-advantage .adv-detail .adv-content{
+    line-height: 54px;
+}
+#laya-advantage .adv-detail .adv-content p{
+    color: #666666;
+    font-size: 14px;
+    font-family: '微软雅黑';
+}
+/* laya优势结束 */
+
+/* layabox产品家族 */
+#laya-family{
+    padding: 110px 0 120px;
+    background-color: #0078d7;
+}
+#laya-family .family-title{
+    margin-bottom: 70px;
+}
+#laya-family .family-title h1{
+    font-size: 48px;
+    font-family: '微软雅黑';
+    color: #fffefe;
+}
+#laya-family .pro-list{
+    color: #fffefe;
+}
+#laya-family .pro-list > div{
+    margin-bottom: 70px;
+}
+#laya-family .pro-list .media-body h4{
+    font-family: 'Arial';
+    font-size: 32px;
+}
+#laya-family .pro-list .media-body p{
+    font-family: '微软雅黑';
+    font-size: 14px;
+    line-height: 29px;
+}
+
+/* 游戏 */
+#laya-games{
+    padding: 80px 0 40px;
+}
+#laya-games .row:first-child{
+    margin-bottom: 25px;
+}
+#laya-games .game-title{
+    font-size: 35px;
+    font-family: '微软雅黑';
+    color: #2a2a2a;
+}
+#laya-games .more{
+    color: #2a2a2a;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: '微软雅黑';
+    margin-top: 30px;
+}
+#my-video{
+    border-radius: 10px;
+}
+#laya-games .game-list>div{
+    margin-bottom: 24px;
+}
+#laya-games .game-list img{
+    margin: auto;
+}
+#laya-games .game-list p{
+    font-size: 14px;
+    color: #2a2a2a;
+    margin-top: 5px;
+}
+/* 当分辨率小于992px时，video居中 */
+@media screen and (max-width: 992px){
+    #laya-games .game-list{
+        margin-top: 40px;
+    }
+    #my-video{
+        margin: auto;
+    }
+}
+/* laya游戏结束 */
+
+
+/* 合作伙伴 */
+#partner{
+    padding: 30px 0 50px;
+    background-color: #f4f4f4;
+}
+#partner .par-title{
+    margin-bottom: 10px;
+}
+#partner .par-title h1{
+    font-size: 30px;
+    color: #2a2a2a;
+}
+#partner .par-title h1>span{
+    font-size: 12px;
+    color: #777777;
+}
+#partner .par-list>div{
+    margin-bottom: 20px;
+}
+#partner .par-list>div img{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: auto;
+}
+

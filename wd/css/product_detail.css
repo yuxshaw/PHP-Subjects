@@ -1,0 +1,141 @@
+article .center{
+    margin-top: 30px;
+}
+article .center .left{
+    width: 400px;
+    height: 278px;
+    background-color: #e8e8e7;
+    border-radius: 5px;
+    background-image: url(../images/big_phone.jpg);
+    display: none;
+}
+article .center .left>img{
+    width: 100%;
+    height: 100%;
+}
+article .center .left>h1,
+article .center .left>h2{
+    margin-left: 232px;
+    color: #333333;
+}
+article .center .left>h1{
+    margin-top: 16px;
+    font-size: 30px;
+    line-height: 30px;
+}
+article .center .left>h2{
+    font-size: 36px;
+    -webkit-box-reflect:below -11px -webkit-linear-gradient(transparent,transparent 50%,rgba(0,0,0,.4));
+}
+article .center .right{
+    width: 244px;
+}
+article .center .right .list{
+    width: 100%;
+}
+article .center .right .list>li{
+    line-height: 40px;
+    border-bottom: 1px dashed #cccccc;
+}
+article .center .right .list>li:nth-child(4){
+    line-height: 24px;
+}
+article .center .right .list>li>span,
+article .center .right .list>li>p{
+    display: inline-block;
+    font-size: 12px;
+}
+article .center .right .list>li>p{
+    color: #666666;
+}
+article .center .right .list2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+article .center .right .list2>li{
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+}
+article .center .list3{
+    width: 100%;
+    height: 112px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    position: relative;
+}
+article .center .list3>li>img{
+    margin-top: 15px;
+    width: 80px;
+    height: 62px;
+}
+article .center .list3>li>p{
+    margin-top: 10px;
+}
+article .center .list3>img{
+    position: absolute;
+    top: 35%;
+    cursor: pointer;
+}
+article .center .list3 .ll{
+    left: 1%;
+}
+article .center .list3 .rr{
+    right: 1%;
+}
+
+article .bottom{
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+article .bottom .title{
+    width: 100%;
+    height: 27px;
+    background: url(../images/bgbgbgbgbg.gif) repeat-x center;
+    border-radius: 20px;
+}
+article .bottom .title a{
+    display: inline-block;
+    width: 92px;
+    height: 20px;
+    font-size: 12px;
+    color: #fefefe;
+    margin-top: 3px;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 17px;
+    border-radius: 10px;
+}
+article .bottom .title a:hover{
+    background-color: #ffffff;
+    color: #333333;
+}
+article .bottom .list4{
+    width: 100%;
+}
+article .bottom .list4>li{
+    border-bottom: 1px dashed #cccccc;
+}
+article .bottom .list4>li:last-child{
+    border: none;
+}
+article .bottom .list4>li>img{
+    margin: 23px 0 14px 40px;
+}
+article .bottom .list4>li>div{
+    margin-left: 40px;
+}
+article .bottom .list4>li>div>h1{
+    font-size: 18px;
+    color: #2665a8;
+    margin-top: 37px;
+}
+article .bottom .list4>li>div>p{
+    font-size: 12px;
+    color: #666666;
+    line-height: 24px;
+}

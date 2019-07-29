@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta name="viewport" content="width=1200,user-scalable=yes">
+    <title>装修公司</title>
+    <script type="text/javascript" src="__STATIC__/js/jquery-1.8.3.min.js" ></script>
+    <script type="text/javascript" src="__STATIC__/js/js_z.js" ></script>
+    <script type="text/javascript" src="__STATIC__/js/banner.js" ></script>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/reset.css"  />
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/thems.css" >
+</head>
+
+<body>
+<!--头部-->
+<div class="head clearfix">
+    <div class="logo"><a href="index.html" ><img src="__STATIC__/images/logo.png" alt="" /></a></div>
+    <div class="phone clearfix">
+        <p>联系电话：<span>0512-87818757 </span></p>
+    </div>
+    <ul class="nav clearfix" id="nav">
+        {foreach $data.nav as $item}
+            <li><a href="{$item['nav_url']}/category/{$item.n_id}" >{$item.nav_name}</a></li>
+        {/foreach}
+<!--        <li class="now"><a href="index.html" ><em>公司首页</em>HOME</a></li>-->
+<!--        <li><a href="case.html" ><em>合作案例</em>CASE</a></li>-->
+<!--        <li><a href="news.html" ><em>新闻中心</em>NEWS</a></li>-->
+<!--        <li><a href="zhaopin.html" ><em>人才招聘</em>Recruitment</a></li>-->
+<!--        <li><a href="about.html" ><em>关于我们</em>ABOUT US</a></li>-->
+    </ul>
+</div>
+<!--头部-->
+<!--幻灯片-->
+<div id="banner" class="banner">
+    <div id="owl-demo" class="owl-carousel">
+        <a class="item" target="_blank" href="" style="background-image:url('__STATIC__/upload/banner.jpg')"></a>
+        <a class="item" target="_blank" href="" style="background-image:url('__STATIC__/upload/banner2.jpg')"></a>
+    </div>
+</div>
+<!--幻灯片-->

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="includes/js/jquery-3.1.1.js"></script>
+</head>
+<body>
+<input type="button" id="btn" value="获取"/>
+<div id="box"></div>
+
+<input type="email" name="email" id="email" placeholder="邮箱"/>
+</body>
+<script>
+    $(function () {
+        $('#btn').click(function () {
+           $.get({
+               url:'data.php',
+               // type:html,
+               data:{name1:'祝蜜',name2:'裕兴',name3:'文杰'},
+               success:function (a) {
+                    //alert(data);
+                    $("#box").html(a);
+               }
+           })
+        })
+
+
+        $('#email').blur(function () {
+            data = $(this).val();
+            $.get({
+                url: 'checkmail.php',
+                //type:text,
+                data: {email:data},
+                success:function (msg) { //回调函数
+                    $('#box').html(msg)
+                }
+            })
+        });
+
+    })
+</script>
+</html>

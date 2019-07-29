@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box"></div>
+
+    <!-- localStorange - H5(本地存储) -->
+    <script>
+        
+        // 设置本地存储数据
+        var arr1 = ['Alan','18','男'];
+        for(var i = 0; i<arr1.length; i++){
+            localStorage.setItem(i,arr1[i]);
+        }
+
+        // 设置本地存储数据
+        var arr2 =[];
+        arr2['姓名'] = 'Alan';
+        arr2['性别'] = 'male';
+        arr2['年龄'] = '18';
+        for(index in arr2){
+            localStorage.setItem(index,arr2[index]);
+        }
+
+
+        var box = document.getElementById('box');
+        // 获取一条数据
+        var data = localStorage.getItem('姓名');
+        box.innerHTML = data;
+
+        // 获取多条数据
+        var all = localStorage.valueOf();
+        for(index in all){
+            console.log(index +'->'+ all[index]);
+        }
+
+
+
+        // 删除数据 localStorange.removeItem(key)
+        function del_index(len){
+            for(var i=0; i<len; i++){
+                localStorage.removeItem(i);
+            }
+        }
+
+        // 删除所有数据
+        function del_all(){
+            localStorage.clear();
+        }
+
+
+        // 获取长度
+        var len = localStorage.length;
+        console.log('本地存储数据长度'+len+'个');
+
+        for(var i=0; i<localStorage.length-1; i++){
+            console.log('第'+(i+1)+'个元素：'+localStorage.getItem(i));
+        }
+
+        for(index in localStorage.valueOf){
+            console.log(index+'->'+localStorage.getItem(index));
+        }
+
+
+    </script>
+    <button onclick="del_index(3);">删除索引数组</button>
+    <button onclick="del_all();">删除所有</button>
+
+</body>
+</html>

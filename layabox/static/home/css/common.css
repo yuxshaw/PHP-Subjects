@@ -1,0 +1,83 @@
+/* 公共样式 */
+/* 鼠标移入图片透明 */
+.img-hover:hover{
+    opacity: .8;
+}
+/* logo */
+nav .navbar-header .navbar-brand{
+    display: block;
+    margin-top: -8px;
+}
+/* 轮播图 */
+.banner{
+    margin-top: 50px;
+}
+.banner .item img{
+    margin: auto;
+}
+
+/* footer页脚样式 */
+#footer{
+    background-color: #3b3b3b;
+    padding: 35px 0 35px;
+}
+#footer .addr ul{
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    padding-left: 0;
+}
+#footer .addr ul li{
+    margin-right: 20px;
+}
+#footer .addr ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #a1a3ab;
+}
+#footer .addr ul li a:hover{
+    color: #fff;
+}
+#footer .addr p{
+    font-size: 12px;
+    color: #a1a3ab;
+    padding: 0;
+    margin: 0;
+}
+#footer .contact{
+    margin-top: 5px;
+}
+#footer .contact>a{
+    display: inline-block;
+    width: 40px;
+    height: 39px;
+    background: url(../images/footer.png) no-repeat;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+#footer .contact .wechat{
+    background-position: 50% 0;
+    position: relative;
+}
+#footer .contact .wechat>img{
+    position: absolute;
+    width: 150px;
+    bottom: 45px;
+    left: -52px;
+    display: none;
+}
+#footer .contact .qq{
+    background-position: right 0;
+    position: relative;
+}
+#footer .contact .qq>img{
+    position: absolute;
+    width: 150px;
+    bottom: 45px;
+    left: -52px;
+    display: none;
+}
+#footer .contact .wechat:hover>img,
+#footer .contact .qq:hover>img{
+    display: block;
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../includes/jquery-3.1.1.js"></script>
+</head>
+<body>
+
+    <input type="button" id="btn" value="戳一下">
+    <div id="box"></div>
+
+    <script>
+        $(function () {
+            $('#btn').click(function () {
+                // 1. $.get 获取文本
+                // $.get(
+                //     'get.txt',    //url
+                //     function (data) {
+                //         // alert(data);
+                //         $('#box').text(data);
+                //     }
+                // );
+
+                // 2. $.get 获取服务端返回的 xml文件
+                // $.get(
+                //     'create_xml.php',
+                //     function (data) {
+                //         // alert(data);
+                //         var xmlOBJ = $(data).children('student');
+                //         var stu = $(xmlOBJ).children('stu');
+                //
+                //         var str = '';
+                //         stu.each(function () {
+                //             str += $(this).children('name').text()+':'+$(this).children('age').text()+'<br/>';
+                //         });
+                //         $("#box").html(str);
+                //
+                //     }
+                // );
+
+                // 3. $.get 获取xml文件
+                // $.get(
+                //     'get_xml.xml',
+                //     function (data) {
+                //         var book = $(data).children('books').children('book');
+                //         var str = '';
+                //         book.each(function () {
+                //            str += $(this).children('name').text()+'<br/>'+$(this).children('author').text()+'<br/>'+$(this).children('data').text()+'<hr/>';
+                //         });
+                //         $('#box').html(str);
+                //     }
+                // );
+
+                // 4. $.get 获取 json 文件
+                $.get(
+                    'stu.json',
+                    function (data) {
+                        var stuOBJ = data.student;
+                        // json 对象转换为
+                        var str = '';
+                        for (var i=0; i<stuOBJ.length; i++){
+                            str += stuOBJ[i].name+':'+stuOBJ[i].age+':'+stuOBJ[i].sex+'<hr />';
+                        }
+                        console.log(str);
+                    }
+                );
+
+            })
+        })
+    </script>
+
+</body>
+</html>

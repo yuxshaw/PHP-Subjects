@@ -1,0 +1,810 @@
+/* 公共样式 */
+/* 鼠标移入图片透明 */
+.img-hover:hover{
+    opacity: .8;
+}
+/* logo */
+nav .navbar-header .navbar-brand{
+    display: block;
+    margin-top: -8px;
+}
+/* 轮播图 */
+.banner{
+    margin-top: 50px;
+}
+.banner .item img{
+    margin: auto;
+}
+.banner .slide{
+    background-color: #2b80d9;
+}
+
+/* 游戏展示模块 */
+#game-show{
+    padding: 20px 0 80px;
+}
+#game-show .show-img>img{
+    margin-top: 20px;
+}
+#game-show .show-title h2{
+    font-size: 30px;
+    color: #2a2a2a;
+    margin-bottom: 20px;
+}
+#game-show .show-title p{
+    font-size: 12px;
+    color: #898989;
+    width: 95%;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+#game-show .show-icon>div{
+    margin-bottom: 30px;
+}
+#game-show .show-icon>div>img{
+    width: 314px;
+    height: 138px;
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+    #game-show .show-icon div img{
+        width: 280px;
+    }
+}
+
+/* 更多游戏 */
+#game-list{
+    padding-bottom: 50px;
+}
+#game-list .list-title>h2{
+    font-size: 36px;
+    color: #010101;
+    margin-bottom: 38px;
+}
+#game-list .list-box>div{
+    margin-bottom: 30px;
+}
+#game-list .list-box>div img{
+    margin: auto;
+}
+#game-list .list-box img{
+    width: 314px;
+    height: 138px;
+    border-radius: 10px;
+}
+#game-list .list-box p{
+    font-size: 14px;
+    color: #2a2a2a;
+    margin-top: 10px;
+}
+@media screen and (max-width:992px){
+    #game-list .list-box>div:last-child{
+        display: none;
+    }
+}
+
+
+
+/* laya引擎模块样式 */
+#laya-engine{
+    padding: 100px 0 90px;
+    background-color: #fbfaf7;
+    border-bottom: 1px solid #eaeaee;
+}
+#laya-engine .title{
+    margin-bottom: 80px;
+}
+#laya-engine .title>h1{
+    font-size: 48px;
+    color: #0078d7;
+    font-weight: bold;
+}
+#laya-engine .title>h2{
+    font-size: 30px;
+    color: #666666;
+}
+#laya-engine .engine-feature>div{
+    margin-bottom: 36px;
+}
+#laya-engine .media-left a{
+    display: block;
+    margin-left: 10px;
+    width: 64px;
+    height: 64px;
+    background-color: #0078d7;
+    border-radius: 5px;
+    margin-right: 5px;
+    transition: transform 1.2s,background-color 1.2s linear;
+}
+#laya-engine .media-left a:hover{
+    transform: rotateY(360deg);
+    background-color: #ccc;
+}
+#laya-engine .media-body h4{
+    font-size: 20px;
+    color: #333333;
+    font-family: '微软雅黑';
+}
+#laya-engine .media-body p{
+    font-size: 14px;
+    color: #666666;
+    font-family: '微软雅黑';
+    line-height: 24px;
+}
+
+/* laya引擎背景 */
+#laya-engine{
+    background-image:url(../images/flash-bg.jpg);
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:768px) {
+    #laya-engine{
+        background-image: none;
+    }
+}
+@media screen and (max-width:992px) and (min-width:768px){
+    #laya-engine{
+        background-position: 500px bottom;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+    #laya-engine{
+        background-position: right bottom;
+    }
+}
+@media screen and (min-width:1200px){
+    #laya-engine{
+        background-position: 1000px bottom;
+    }
+}
+
+
+/* layabox优势模块样式 */
+#laya-advantage{
+    padding: 100px 0 90px;
+}
+#laya-advantage .adv-box{
+    margin-top: 10px;
+}
+#laya-advantage .adv-img{
+    margin-top: 72px;
+}
+#laya-advantage .adv-detail h1{
+    font-size: 48px;
+    color: #8fc31f;
+    font-weight: bold;
+    font-family: '微软雅黑';
+    margin-bottom: 44px;
+}
+#laya-advantage .adv-detail .adv-icon{
+    width: 54px;
+    height: 54px;
+    background-color: #8fc31f;
+    padding: 0;
+    border-radius: 50%;
+    transition: transform 1.2s;
+}
+#laya-advantage .adv-detail .adv-icon:hover{
+    transform: rotate(360deg);
+}
+#laya-advantage .adv-detail .adv-icon img{
+    width: 54px;
+    height: 54px;
+}
+#laya-advantage .adv-detail .adv-content{
+    line-height: 54px;
+}
+#laya-advantage .adv-detail .adv-content p{
+    color: #666666;
+    font-size: 14px;
+    font-family: '微软雅黑';
+}
+/* laya优势结束 */
+
+/* layabox产品家族 */
+#laya-family{
+    padding: 110px 0 120px;
+    background-color: #0078d7;
+}
+#laya-family .family-title{
+    margin-bottom: 70px;
+}
+#laya-family .family-title h1{
+    font-size: 48px;
+    font-family: '微软雅黑';
+    color: #fffefe;
+}
+#laya-family .pro-list{
+    color: #fffefe;
+}
+#laya-family .pro-list > div{
+    margin-bottom: 70px;
+}
+#laya-family .pro-list .media-body h4{
+    font-family: 'Arial';
+    font-size: 32px;
+}
+#laya-family .pro-list .media-body p{
+    font-family: '微软雅黑';
+    font-size: 14px;
+    line-height: 29px;
+}
+
+/* 游戏 */
+#laya-games{
+    padding: 80px 0 40px;
+}
+#laya-games .row:first-child{
+    margin-bottom: 25px;
+}
+#laya-games .game-title{
+    font-size: 35px;
+    font-family: '微软雅黑';
+    color: #2a2a2a;
+}
+#laya-games .more{
+    color: #2a2a2a;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: '微软雅黑';
+    margin-top: 30px;
+}
+#my-video{
+    border-radius: 10px;
+}
+#laya-games .game-list>div{
+    margin-bottom: 24px;
+}
+#laya-games .game-list img{
+    margin: auto;
+}
+#laya-games .game-list p{
+    font-size: 14px;
+    color: #2a2a2a;
+    margin-top: 5px;
+}
+/* 当分辨率小于992px时，video居中 */
+@media screen and (max-width: 992px){
+    #laya-games .game-list{
+        margin-top: 40px;
+    }
+    #my-video{
+        margin: auto;
+    }
+}
+/* laya游戏结束 */
+
+
+/* 合作伙伴 */
+#partner{
+    padding: 30px 0 50px;
+    background-color: #f4f4f4;
+}
+#partner .par-title{
+    margin-bottom: 10px;
+}
+#partner .par-title h1{
+    font-size: 30px;
+    color: #2a2a2a;
+}
+#partner .par-title h1>span{
+    font-size: 12px;
+    color: #777777;
+}
+#partner .par-list>div{
+    margin-bottom: 20px;
+}
+#partner .par-list>div img{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: auto;
+}
+
+/* 公司简介模块 */
+#brief{
+    padding: 60px 0 65px;
+}
+
+#brief .brief-content h2{
+    font-size: 36px;
+    color: #2a2a2a;
+    margin-bottom: 35px;
+}
+
+#brief .brief-content h3{
+    font-size: 20px;
+    color: #2a2a2a;
+    margin: 0;
+    line-height: 24px;
+}
+
+#brief .brief-content p{
+    font-size: 14px;
+    color: #2a2a2a;
+    line-height: 21px;
+    text-indent: 2em;
+    margin-top: 30px;
+}
+#brief .brief-img{
+    padding-top: 150px;
+}
+#brief .brief-img>img{
+    width: 303px;
+    height: 176px;
+}
+
+/* invite样式 */
+#invite{
+    background-color: #8cc11f;
+    width: 100%;
+    padding: 80px 0 72px;
+}
+
+#invite .inv-title h2{
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+#invite .inv-content p,#invite .inv-email p{
+    font-size: 16px;
+    color: #fff;
+    line-height: 32px;
+}
+
+#invite .inv-email .mail{
+    width: 220px;
+    height: 48px;
+    background-color: #fff;
+    color: #8cc11f;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 24px;
+}
+
+/* jobs样式 */
+#jobs{
+    padding: 50px 0 60px;
+}
+
+#jobs .job-list{
+    padding-top: 46px;
+    padding-bottom: 56px;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+#jobs .job-list:last-child{
+    border: none;
+}
+
+#jobs .job-list h3{
+    font-size: 26px;
+    color: #8cc11f;
+    margin: 0;
+    line-height: 78px;
+}
+
+#jobs .job-list h4{
+    margin: 0;
+    font-size: 18px;
+    color: #2a2a2a;
+    line-height: 36px;
+}
+
+#jobs .job-list p{
+    font-size: 14px;
+    color: #2a2a2a;
+    text-indent: 2em;
+}
+
+
+/* contact样式 */
+#contact{
+    background-color: #f4f4f4;
+    padding: 26px 0 62px;
+}
+#contact .contact-title{
+    font-size: 36px;
+    color: #2a2a2a;
+    margin-bottom: 40px;
+}
+#contact .add{
+    margin-bottom: 20px;
+}
+#contact .add>div{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 8px 0 8px 16px;
+    box-shadow: #e3e3e3 0 0 2px 2px;
+}
+#contact .add .media-body{
+    line-height: 72px;
+}
+#contact .add .media-body>h4{
+    margin: 0;
+    line-height: 72px;
+    font-size: 16px;
+    color: #2a2a2a;
+}
+
+/* layaflash样式 */
+
+#layaflash {
+    margin-top: 50px;
+    background-color: #8bc01f;
+    padding: 60px 0;
+}
+
+#layaflash .flash-content .con-title>div {
+    width: 54px;
+    height: 54px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 54px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #8bc01f;
+    display: inline-block;
+}
+
+#layaflash .flash-content .con-title h1 {
+    display: inline-block;
+    font-size: 48px;
+    color: #ffffff;
+    text-indent: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+#layaflash .flash-content .content h3 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+#layaflash .flash-content .content p {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+
+#layaflash .flash-content .content a {
+    display: block;
+    text-decoration: none;
+    width: 100px;
+    height: 34px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 34px;
+    background-color: #e8f2d2;
+    font-size: 14px;
+    color: #8bc01f;
+    margin-bottom: 34px;
+}
+
+@media screen and (max-width:992px) {
+    #layaflash .flash-img>img {
+        margin: auto;
+    }
+}
+
+/* layaplayer模块 */
+
+#layaplayer {
+    padding: 60px 0;
+    background-color: #3393df;
+}
+
+#layaplayer .player-title {
+    margin-left: 15px;
+}
+
+#layaplayer .player-title .second {
+    width: 42px;
+    height: 44px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #3393df;
+    display: inline-block;
+}
+
+#layaplayer .player-title>h2 {
+    display: inline-block;
+    font-size: 48px;
+    color: #ffffff;
+    text-indent: 5px;
+    padding: 0;
+    margin-bottom: 18px;
+}
+
+#layaplayer .player-box h2 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+#layaplayer .player-box p {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 34px;
+}
+
+#layaplayer .player-box .img-2 {
+    margin-top: 152px;
+}
+
+@media screen and (max-width:992px) {
+    #layaplayer .player-box .img-1 img, #layaplayer .player-box .img-2 img {
+        margin: auto;
+    }
+}
+
+/* layaAir样式 */
+#layaair {
+    padding: 80px 0;
+}
+
+#layaair .air-title .third {
+    width: 42px;
+    height: 44px;
+    background-color: #3393df;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    display: inline-block;
+}
+#layaair .air-title>h2{
+    display: inline-block;
+    font-size: 48px;
+    color: #3393df;
+    text-indent: 5px;
+    padding: 0;
+    margin-bottom: 18px;
+}
+#layaair .air-box span{
+    font-size: 18px;
+    color: #5d5d5d;
+}
+#layaair .air-box h3{
+    font-size: 18px;
+    color: #3393df;
+}
+#layaair .air-box p{
+    font-size: 14px;
+    color: #5d5d5d;
+    text-indent: 2em;
+    height: 48px;
+    line-height: 24px;
+    width: 85%;
+}
+#layaair .air-box img{
+    margin: auto;
+}
+
+/* layastore样式 */
+#layastore {
+    padding: 80px 0;
+    background-color: #f7f7f7;
+}
+
+#layastore .air-title .third {
+    width: 42px;
+    height: 44px;
+    background-color: #3393df;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    display: inline-block;
+}
+#layastore .air-title>h2{
+    display: inline-block;
+    font-size: 48px;
+    color: #3393df;
+    text-indent: 5px;
+    padding: 0;
+    margin-bottom: 18px;
+}
+#layastore .air-box span{
+    font-size: 18px;
+    color: #5d5d5d;
+}
+#layastore .air-box h3{
+    font-size: 18px;
+    color: #3393df;
+}
+#layastore .air-box p{
+    font-size: 14px;
+    color: #5d5d5d;
+    text-indent: 2em;
+    height: 48px;
+    line-height: 24px;
+    width: 85%;
+}
+#layastore .air-box img{
+    margin: auto;
+}
+
+/* layanews */
+#layanews{
+    margin-top: 50px;
+    padding-top: 40px;
+}
+#layanews .news-title h2{
+    font-size: 30px;
+    color: #ff6b08;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+#layanews .news-icon{
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+
+#layanews .news-icon img{
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 1px #ccc;
+}
+
+#layanews .news-icon p{
+    position: absolute;
+    background-color: #2a2a2a;
+    opacity: 0.7;
+    bottom: -10px;
+    width: 92.5%;
+    height: 7%;
+    transition: all .3s linear;
+}
+#layanews .news-icon h3{
+    width: 92.5%;
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+    color: #000;
+    font-size: 14px;
+    transition: all .3s linear;
+}
+#layanews .news-icon:hover>p{
+    height: 23%;
+}
+#layanews .news-icon:hover>h3{
+    color: #FFF;
+}
+
+/* news-list */
+#news-list{
+    padding: 90px 0 36px;
+}
+#news-list .list-box{
+    margin-bottom: 36px;
+}
+#news-list .list-box .media-body h4,
+#news-list .list-box .media-body p{
+    margin-left: 15px;
+}
+#news-list .list-box .media-body h4{
+    font-size: 18px;
+    color: #ff6b08;
+    margin-bottom: 18px;
+}
+#news-list .list-box .media-body p{
+    font-size: 14px;
+    color: #2a2a2a;
+    line-height: 24px;
+    width: 92%;
+    margin-bottom: 15px;
+}
+#news-list .list-box .media-body a{
+    display: block;
+    text-decoration: none;
+    width: 98px;
+    height: 32px;
+    border: 1px solid #ff6b08;
+    border-radius: 20px;
+    /* background-color: #ff6b08; */
+    font-size: 14px;
+    color: #ff6b08;
+    text-align: center;
+    line-height: 32px;
+    /* margin-left: 54.3rem; */
+}
+#news-list .list-box .media-body a:hover{
+    background-color: #ff6b08;
+    color: #fff;
+}
+
+
+/* button-list样式 */
+#button-list{
+    padding-bottom: 26px;  
+}
+
+#button-list .button-box{
+    padding-top: 36px;
+    border-top: 1px dashed #d4d4d4;
+}
+
+#button-list .btn-default:hover, .list .btn-default:active ,.list .btn-default:focus{
+    background-color: #ff6b08;
+}
+
+/* footer页脚样式 */
+#footer{
+    background-color: #3b3b3b;
+    padding: 35px 0 35px;
+}
+#footer .addr ul{
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    padding-left: 0;
+}
+#footer .addr ul li{
+    margin-right: 20px;
+}
+#footer .addr ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #a1a3ab;
+}
+#footer .addr ul li a:hover{
+    color: #fff;
+}
+#footer .addr p{
+    font-size: 12px;
+    color: #a1a3ab;
+    padding: 0;
+    margin: 0;
+}
+#footer .contact{
+    margin-top: 5px;
+}
+#footer .contact>a{
+    display: inline-block;
+    width: 40px;
+    height: 39px;
+    background: url(../images/footer.png) no-repeat;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+#footer .contact .wechat{
+    background-position: 50% 0;
+    position: relative;
+}
+#footer .contact .wechat>img{
+    position: absolute;
+    width: 150px;
+    bottom: 45px;
+    left: -52px;
+    display: none;
+}
+#footer .contact .qq{
+    background-position: right 0;
+    position: relative;
+}
+#footer .contact .qq>img{
+    position: absolute;
+    width: 150px;
+    bottom: 45px;
+    left: -52px;
+    display: none;
+}
+#footer .contact .wechat:hover>img,
+#footer .contact .qq:hover>img{
+    display: block;
+}

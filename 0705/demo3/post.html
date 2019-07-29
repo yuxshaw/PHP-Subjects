@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function check_code() {
+            var user = document.getElementById('user');
+            info = user.value;
+            info = encodeURIComponent(info);
+            info = "name"+info+"&age=19";
+            var ajax = new XMLHttpRequest();
+            ajax.onreadystatechange = function(){
+                if (ajax.readyState == 4 && ajax.status ==200){
+                    alert(ajax.responseText);
+                }
+            }
+            // post模拟form表单传输信息
+            // post的数据是以xml的格式发送给服务器
+            ajax.open('POST','check.php',true);
+
+            // 设置头信息
+            // post头信息应该放到open方法的后面
+            ajax.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+            ajax.send(info);
+        }
+    </script>
+</head>
+<body>
+用户：<input type="text" name="user" id="user" onblur="check_code()">
+</body>
+</html>

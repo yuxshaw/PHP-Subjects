@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./includes/bootstrap.css">
+    <script src="includes/jquery-3.1.1.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <form class="form-horizontal">
+                    <div style="margin-top: 50px;" class="form-group">
+                        <label for="user" class="col-sm-2 control-label">用户名</label>
+                        <div class="col-sm-10">
+                            <input style="width: 60%; position: relative;" type="text" class="form-control" name="user" id="user" placeholder="username">
+                            <img class="name_err" style="position: absolute; right: 40px; width: 150px; height: 30px; top: 2px; display: none;" src="images/name_err.png" alt="">
+                            <img class="n_right" src="./images/right.png" style="position: absolute; right: 160px; width: 30px; height: 30px; top: 2px; display: none;" alt="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd" class="col-sm-2 control-label">密码</label>
+                        <div class="col-sm-10">
+                            <input style="width: 60%; position: relative;" type="password" class="form-control" name="pwd" id="pwd" placeholder="Password">
+                            <img class="pwd_msg" style="position: absolute; right: 40px; width: 150px; height: 30px; top: 2px; display: none;" src="images/pwd_msg.png" alt="">
+                            <img class="pwd_err1" style="position: absolute; right: 40px; width: 150px; height: 30px; top: 2px; display: none;" src="images/pwd_err1.png" alt="">
+                            <img class="p_right" src="./images/right.png" style="position: absolute; right: 160px; width: 30px; height: 30px; top: 2px; display: none;" alt="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="conf_pwd" class="col-sm-2 control-label">确认密码</label>
+                        <div class="col-sm-10">
+                            <input style="width: 60%; position: relative;" type="password" class="form-control" name="conf_pwd" id="conf_pwd" placeholder="confirmPassword">
+                            <img class="pwd_err2" style="position: absolute; right: 40px; width: 150px; height: 30px; top: 2px; display: none;" src="images/pwd_err2.png" alt="">
+                            <img class="cp_right" src="./images/right.png" style="position: absolute; right: 160px; width: 30px; height: 30px; top: 2px; display: none;" alt="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">邮箱</label>
+                        <div class="col-sm-10">
+                            <input style="width: 60%; position: relative" type="email" class="form-control" name="email" id="email" placeholder="Email">
+                            <img class="e_err" style="position: absolute; right: 40px; width: 150px; height: 30px; top: 2px; display: none;" src="images/e_err.png" alt="">
+                            <img class="e_right" src="./images/right.png" style="position: absolute; right: 160px; width: 30px; height: 30px; top: 2px; display: none;" alt="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" id="sub" class="btn btn-success">登录</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+    $(function () {
+        $('#user').blur(function () {
+            var user = $(this).val();
+            $.post(
+                'data.php',
+                // type:'json',
+                {user:user},
+                function (code) {
+                    // console.log(code);
+                    info = JSON.parse(code);
+                    console.log(info);
+                        if (info == 1){
+                            $('.name_err').css('display','block');
+                            $('.n_right').css('display','none');
+                            $('#sub').attr('disabled',true);
+                        }else if (info == 2){
+                            $('.name_err').css('display','none');
+                            $('.n_right').css('display','block');
+                            $('#sub').attr('disabled',false);
+                        }
+                }
+            )
+        });
+
+        $('#email').blur(function () {
+            var email = $(this).val();
+            $.post(
+                'data.php',
+                {email:email},
+                function (code) {
+                    info = JSON.parse(code);
+                    if (info ==1 ){
+                        $('.e_err').css('display','block');
+                        $('.e_right').css('display','none');
+                        $('#sub').attr('disabled',true);
+                    } else if (info ==2) {
+                        $('.e_err').css('display','none');
+                        $('.e_right').css('display','block');
+                        $('#sub').attr('disabled',false);
+                    }
+                }
+            )
+        });
+
+
+            var user = $('#user').val();
+            var pwd = $('#pwd').val();
+            var conf_pwd = $('#conf_pwd').val();
+            var email = $('#email').val();
+            if (user == '' || pwd == '' || conf_pwd == '' || email == ''){
+                $('#sub').attr('disabled',true);
+            }
+        // $('#user #pwd #conf_pwd #email').blur(function () {
+        //     if ($(this).val()==''){
+        //         $('.name_err').css('display','none');
+        //         $('.n_right').css('display','none');
+        //         $('.e_right').css('display','none');
+        //         $('.e_err').css('display','none');
+        //         $('.p_right').css('display','none');
+        //         $('.pwd_err1').css('display','none');
+        //         $('.pwd_err2').css('display','none');
+        //         $('.cp_right').css('display','none');
+        //     }
+        // })
+
+        // 判断密码是否合法
+        $('#pwd').focus(function () {
+            $('.pwd_msg').css('display','block');
+            $('.p_right').css('display','none');
+            $('.pwd_err1').css('display','none');
+        }).blur(function () {
+            $('.pwd_msg').css('display','none');
+            if ($(this).val().length<6 && $(this).val().length>0){
+                $('.pwd_err1').css('display','block');
+                $('.p_right').css('display','none');
+                $('#sub').attr('disabled',true);
+            } else {
+                $('.pwd_err1').css('display','none');
+                $('.p_right').css('display','block');
+                $('#sub').attr('disabled',false);
+            }
+        });
+
+        // 判断两次密码是否一致
+        $('#conf_pwd').blur(function () {
+            if ($(this).val() == $('#pwd').val()){
+                $('.pwd_err2').css('display','none');
+                $('.cp_right').css('display','block');
+                $('#sub').attr('disabled',false);
+            } else {
+                $('.pwd_err2').css('display','block');
+                $('.cp_right').css('display','none');
+                $('#sub').attr('disabled',true);
+            }
+        })
+    })
+
+</script>

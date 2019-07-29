@@ -1,0 +1,80 @@
+article .center {
+    margin-top: 30px;
+}
+article .center .left{
+    width: 232px;
+    height: 388px;
+    background-image: linear-gradient(to top,#e1e1e1,#f8f8f8);
+    border-radius: 10px;
+    overflow: hidden;
+}
+article .center .left>h2{
+    font-size: 30px;
+    color: #333333;
+    line-height: 30px;
+    margin-top: 18px;
+    margin-left: 21px;
+}
+article .center .left>h1{
+    font-size: 36px;
+    color: #333333;
+    font-weight: bold;
+    line-height: 30px;
+    margin-left: 21px;
+    -webkit-box-reflect:below 0px -webkit-linear-gradient(transparent,transparent 50%,rgba(0,0,0,.4));
+}
+article .center .left>img{
+    margin: 20px 0 0 16px;
+}
+article .center .right{
+    width: 448px;
+}
+article .center .right>h2{
+    font-size: 20px;
+}
+article .center .right>h2>a{
+    font-size: 20px;
+    color: #1647a1;
+}
+article .center .right>h3{
+    font-size: 14px;
+    color: #333333;
+    margin-top: 22px;
+    line-height: 18px;
+}
+article .center .right>p{
+    font-size: 12px;
+    color: #666666;
+    margin-top: 32px;
+    line-height: 16px;
+}
+article .center .right>h1{
+    font-size: 48px;
+    margin-top: 45px;
+}
+article .center .right>h1>span{
+    font-size: 12px;
+}
+
+article .bottom{
+    margin-top: 40px;
+    height: 226px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background: url(../images/coffee_bg.png) no-repeat 98% 75%;
+    margin-bottom: 62px;
+}
+article .bottom ul{
+    margin-left: 26px;
+    list-style-image: url(../images/ceo-001.gif);
+    margin-top: 20px;
+}
+article .bottom ul li{
+    font-size: 12px;
+    color: #666666;
+    line-height: 24px;
+    text-indent: 1em;
+}
+article .bottom ul li>span{
+    color: #333333;
+}

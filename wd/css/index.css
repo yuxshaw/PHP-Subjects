@@ -1,0 +1,390 @@
+.link{
+    cursor: pointer;
+}
+/* 内容部分开始 */
+.content {
+    box-shadow: 0px 16px 16px -4px #ededed;
+}
+.content .banner{ 
+    width: 1024px;
+    height: 440px;
+    background-color: #ccc;
+    position: relative;
+}
+.content .banner > img.banner-img{
+    width: 100%;
+    height: 100%;
+}
+/* 分页器 */
+.content .banner .pag{
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    margin-left: -30px;
+}
+.content .banner .pag > li{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: thin solid rgba(255,255,255,.6);
+    background-color: rgba(0,0,0,.4);
+}
+/* 箭头按钮 */
+.content .banner .button-prev,
+.content .banner .button-next{
+    width: 60px;
+    height: 60px;
+    box-shadow: 0px 0px 1px 1px rgba(255,255,255,.2);
+    background-color: rgba(0,0,0,.2);
+    font-size: 60px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .6s;
+    z-index: 100;
+}
+.content .banner .button-prev{
+    left: 0px;
+}
+.content .banner .button-next{
+    right: 0px;
+}
+.content .banner:hover  div[class^="button"]{
+    opacity: 1;
+}
+/* 信息 */
+.content .info,
+.content .products,
+.content .about{
+    height: 190px;
+    float: left;
+    margin: 20px 0;
+    /* background-color: #f92a7d; */
+}
+/* 信息 */
+.content .info{
+    width: 330px;
+    margin-left: 20px;
+}
+/* 选项卡 */
+.content .info .tab{
+    height: 120px;
+}
+.content .info .btn-box{
+    font-size: 12px;
+    color: #666666;
+}
+.content .info .btn-box>div{
+    width: 66px;
+    height: 22px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    text-align: center;
+    line-height: 22px;
+}
+.content .info .btn-box .news{
+    border-right: none;
+}
+.content .info .btn-box .more{
+    text-decoration: none;
+    color: #666666;
+    line-height: 22px;
+}
+/* 按钮激活状态 */
+#info-active{
+    border-bottom-color: #fff;
+    background-color: transparent;
+}
+.content .tab .info-box ul[class$="box"]{
+    display: none;
+    border-top: 1px solid #ccc;
+    margin-top: -1px;
+    height: 90px;
+    padding-top: 10px;
+}
+.content .tab .info-box li{
+    line-height: 20px;
+}
+/* info列表样式 */
+.content .tab .news-box li a{
+    text-decoration: none;
+    color: #666;
+    font-size: 12px;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.content .tab .news-box li span{
+    font-size: 12px;
+    color: #89a1cf;
+}
+/* service */
+.content .info .service{
+    border: 1px solid #ccc;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.content .info .service li{
+    width: 108px;
+    height: 50px;
+    margin: 5px 0;
+    box-shadow: 4px 0px 5px -5px #666;
+    display: flex;
+    justify-content: space-around;
+}
+.content .info .service li>img{
+    width: 46px;
+    height: 46px;
+    margin-left: 4px;
+    margin-top: 2px;
+}
+.content .info .service li>.text{
+    font-family: '宋体';
+    font-size: 12px;
+    text-align: center;
+}
+.content .info .service li>.text h1{ 
+    color: #000;
+    margin-top: 10px;
+}
+.content .info .service li>.text h2{
+    color: #13449f;
+}
+
+/* 产品 */
+.content .products{
+    width: 340px;
+    margin-left: 26px;
+    margin-right: 28px;
+    /* background-color: #eee; */
+}
+.content .products .pro-box{
+    border: 1px solid #ccc;
+    height: 106px;
+    /* box-sizing: border-box; */
+    background-image: linear-gradient(to top,#f1f1f1,#fff);
+    position: relative;
+}
+.content .products .pro-box .pro-img{
+    width: 130px;
+    height: 106px;
+    text-align: center;
+}
+.content .products .pro-box .pro-img>img{
+    margin-top: 24px;
+}
+.content .products .pro-box .pro-info{
+    width: 208px;
+    height: 106px;
+    text-align: right;
+    font-family: '宋体';
+    /* padding-right: 22px; */
+}
+.content .products .pro-box .title,
+.content .products .pro-box .type,
+.content .products .pro-box .desc-1,
+.content .products .pro-box .desc-2{
+    width: 94%;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+.content .products .pro-info .title{
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 20px;
+}
+.content .products .pro-info .title>span{
+    color: #999999;
+}
+.content .products .pro-box .type{
+    font-size: 16px;
+    color: #13449f;
+    line-height: 20px;
+}
+.content .products .pro-box .desc-1,
+.content .products .pro-box .desc-2{
+    font-size: 12px;
+    line-height: 16px;
+    color: #7e7e7e;
+}
+.content .products .pro-box .more{
+    font-family: '微软雅黑','黑体';
+    color: #666;
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 6%;
+}
+/* 按钮 */
+.content .products .pro-box .pro-prev,
+.content .products .pro-box .pro-next{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #cdcdcd;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    text-align: center;
+    line-height: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px 1px #cdcdcd;
+}
+.content .products .pro-box .pro-prev{
+    left: -11px;
+}
+.content .products .pro-box .pro-next{
+    right: -11px;
+}
+.content .products .about-pro{
+    height: 56px;
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-around;
+}
+.content .products .about-pro .left,
+.content .products .about-pro .right{
+    width: 158px;
+    height: 56px;
+    display: flex;
+    justify-content: flex-start;
+}
+.content .products .about-pro .mid-bar{
+    width: 5px;
+    height: 50px;
+    background-image:linear-gradient(to right, #fff, #eee ,#ccc, #eee,#fff);
+    border-radius: 50%;
+    margin-top: 3px;
+}
+.content .products .about-pro>div>img{
+    width: 60px;
+    height: 44px;
+    margin-top: 6px;
+}
+.content .products .about-pro>div .text{
+    margin-left: 8px;
+}
+.content .products .about-pro>div h1{
+    font-size: 12px;
+    line-height: 14px;
+    color: #333;
+}
+.content .products .about-pro>div h2{
+    font-size: 12px;
+    line-height: 14px;
+    color: #7e7e7e;
+    height: 28px;
+    overflow: hidden;
+}
+.content .products .about-pro>div a{
+    text-decoration: none;
+    color: #666;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: '微软雅黑';
+    margin: 0px;
+}
+
+
+
+.content .about{
+    width: 230px;
+    height: 184px;
+}
+.content .about .info-list > li{
+    margin-bottom: 2px;
+}
+/* 按钮样式 */
+.content .about .info-list .btn{
+    display: block;
+    width: 230px;
+    height: 24px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    line-height: 24px;
+    color: #333;
+    font-size: 12px;
+    font-family: '宋体';
+    text-indent: 1rem;
+    background-image: linear-gradient(to bottom,#fff 50% ,#eee 50%);
+    position: relative;
+    /* transition: all 1.5s linear; */
+}
+.content .about .info-list .btn > span{
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    background-image: url(../images/plus.png);
+    background-repeat: no-repeat;
+}
+/* 按钮激活 */
+#btn-active > span{
+    background-image: url(../images/minus.png);
+    background-repeat: no-repeat;
+}
+#btn-active+.about-info{
+    height: 88px;
+    padding: 12px 0 10px;
+}
+.content .about .info-list .about-info{
+    width: 230px;
+    height: 0px;
+    /* display: none; */
+    /* padding: 12px 0 10px; */
+    overflow: hidden;
+    /* transition: all .3s linear; */
+}
+.content .about .info-list .about-info li{
+    float: left;
+}
+.content .about .info-list .about-info .about-txt{
+    width: 100px;
+    height: 88px;
+    margin-left: 15px;
+}
+.content .about .info-list .about-info .about-txt h1{
+    font-size: 14px;
+    color: #13449f;
+    font-family: '宋体';
+    line-height: 20px;
+}
+.content .about .info-list .about-info .about-txt p{
+    height: 28px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 14px;
+    color: #333;
+}
+.content .about .info-list .about-info .about-img{
+    width: 110px;
+    height: 88px;
+    text-align: center;
+}
+.content .about .info-list .about-info .about-img > img{
+    width: 100px;
+    height: 88px;
+}
+.content .about-info .about-txt a{
+    color: #666;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: '微软雅黑';
+}
+

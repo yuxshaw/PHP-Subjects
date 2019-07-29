@@ -1,0 +1,398 @@
+/* banner样式 */
+.banner{
+    width: 100%;
+}
+
+.banner img{
+    width: 100%;
+}
+
+/* content样式 */
+.content{
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.content span{
+    display: block;
+    color: #6f7071;
+    font-size: 14px;
+    margin-top: 1%;
+    margin-left: 15%; 
+}
+
+.content .title{
+    width: 18.8%;
+    margin: 4% auto;
+    text-align: center;
+}
+
+.content .title h2{
+    font-size: 30px;
+    color: #5b5b5b;
+    font-weight: lighter;
+}
+
+.content .title img{
+    margin-top: 3%;
+}
+
+.content .title p{
+    font-size: 18px;
+    color: #999999;
+    font-weight: lighter;
+}
+
+.content .con{
+    width: 70.2%;
+    margin: 0 auto;
+}
+
+/* first */
+.content .con .first{
+    width: 100%;
+    margin: 3% auto;
+}
+
+.content .con .first img{
+    float: left;
+}
+
+.content .con .first .words{
+    float: left;
+    width: 46.5%;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.content .con .first .words h2{
+    font-size: 30px;
+    color: #908f8f;
+}
+
+.content .con .first .words span{
+    display: block;
+    margin-left: 0;
+    font-size: 18px;
+    color: #232323;
+}
+
+.content .con .first .words p{
+    margin-top: 3%;
+    font-size: 14px;
+    color: #666666;
+}
+
+.content .con .first .words a{
+    display: block;
+    margin-top: 5%;
+    width: 130px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #666666;
+    font-size: 18px;
+    border: 2px solid #959595;
+}
+
+.content .con .first .words a:hover{
+    background-color: #f5de5a;
+    color: #ffffff;
+    border: none;
+}
+
+/* second */
+.content .con .second{
+    width: 100%;
+    margin: 3% auto;
+}
+
+.content .con .second .words{
+    float: left;
+    width: 46.5%;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.content .con .second .words h2{
+    font-size: 30px;
+    color: #908f8f;
+}
+
+.content .con .second .words span{
+    display: block;
+    margin-left: 0;
+    font-size: 18px;
+    color: #232323;
+}
+
+.content .con .second .words p{
+    margin-top: 3%;
+    font-size: 14px;
+    color: #666666;
+}
+
+.content .con .second .words a{
+    display: block;
+    margin-top: 5%;
+    width: 130px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #666666;
+    font-size: 18px;
+    border: 2px solid #959595;
+}
+
+.content .con .second .words a:hover{
+    background-color: #f5de5a;
+    color: #ffffff;
+    border: none;
+}
+
+.content .con .second img{
+    float: right;
+}
+
+/* third */
+.content .con .third{
+    width: 100%;
+    margin: 3% auto;
+}
+
+.content .con .third img{
+    float: left;
+}
+
+.content .con .third .words{
+    float: left;
+    width: 46.5%;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.content .con .third .words h2{
+    font-size: 30px;
+    color: #908f8f;
+}
+
+.content .con .third .words span{
+    display: block;
+    margin-left: 0;
+    font-size: 18px;
+    color: #232323;
+}
+
+.content .con .third .words p{
+    margin-top: 3%;
+    font-size: 14px;
+    color: #666666;
+}
+
+.content .con .third .words a{
+    display: block;
+    margin-top: 5%;
+    width: 130px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #666666;
+    font-size: 18px;
+    border: 2px solid #959595;
+}
+
+.content .con .third .words a:hover{
+    background-color: #f5de5a;
+    color: #ffffff;
+    border: none;
+}
+
+/* fourth */
+.content .con .fourth{
+    width: 100%;
+    margin: 3% auto;
+}
+
+.content .con .fourth .words{
+    float: left;
+    width: 46.5%;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.content .con .fourth .words h2{
+    font-size: 30px;
+    color: #908f8f;
+}
+
+.content .con .fourth .words span{
+    display: block;
+    margin-left: 0;
+    font-size: 18px;
+    color: #232323;
+}
+
+.content .con .fourth .words p{
+    margin-top: 3%;
+    font-size: 14px;
+    color: #666666;
+}
+
+.content .con .fourth .words a{
+    display: block;
+    margin-top: 5%;
+    width: 130px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #666666;
+    font-size: 18px;
+    border: 2px solid #959595;
+}
+
+.content .con .fourth .words a:hover{
+    background-color: #f5de5a;
+    color: #ffffff;
+    border: none;
+}
+
+.content .con .fourth img{
+    float: right;
+}
+
+/* fifth */
+.content .con .fifth{
+    width: 100%;
+    margin: 3% auto;
+}
+
+.content .con .fifth img{
+    float: left;
+}
+
+.content .con .fifth .words{
+    float: left;
+    width: 46.5%;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.content .con .fifth .words h2{
+    font-size: 30px;
+    color: #908f8f;
+}
+
+.content .con .fifth .words span{
+    display: block;
+    margin-left: 0;
+    font-size: 18px;
+    color: #232323;
+}
+
+.content .con .fifth .words p{
+    margin-top: 3%;
+    font-size: 14px;
+    color: #666666;
+}
+
+.content .con .fifth .words a{
+    display: block;
+    margin-top: 5%;
+    width: 130px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #666666;
+    font-size: 18px;
+    border: 2px solid #959595;
+}
+
+.content .con .fifth .words a:hover{
+    background-color: #f5de5a;
+    color: #ffffff;
+    border: none;
+}
+
+/* sixth */
+.content .con .sixth{
+    width: 100%;
+    margin: 3% auto;
+}
+
+.content .con .sixth .words{
+    float: left;
+    width: 46.5%;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.content .con .sixth .words h2{
+    font-size: 30px;
+    color: #908f8f;
+}
+
+.content .con .sixth .words span{
+    display: block;
+    margin-left: 0;
+    font-size: 18px;
+    color: #232323;
+}
+
+.content .con .sixth .words p{
+    margin-top: 3%;
+    font-size: 14px;
+    color: #666666;
+}
+
+.content .con .sixth .words a{
+    display: block;
+    margin-top: 5%;
+    width: 130px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #666666;
+    font-size: 18px;
+    border: 2px solid #959595;
+}
+
+.content .con .sixth .words a:hover{
+    background-color: #f5de5a;
+    color: #ffffff;
+    border: none;
+}
+
+.content .con .sixth img{
+    float: right;
+}
+
+/* list */
+.content .list{
+    width: 37.5%;
+    margin: 4% auto;
+}
+
+.content .list ul{
+    text-align: center;
+    width: 100%;
+}
+
+.content .list ul li{
+    float: left;
+    width: 12.5%;
+    line-height: 45px;
+}
+
+.content .list ul li a{
+    font-size: 24px;
+    color: #707070;
+}
+
+.content .list ul li a:hover{
+    color: #f5de5a;
+}
+
+.content  .imgs{
+    margin-top: 1%;
+    margin-left: 14.3%;
+}

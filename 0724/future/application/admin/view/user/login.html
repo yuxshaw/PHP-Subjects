@@ -1,0 +1,72 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>管理员登陆 - B902后台模板</title>
+    <link rel="stylesheet" href="/static/admin/static/common/layui/css/layui.css">
+    <link rel="stylesheet" href="/static/admin/static/admin/css/login.css">
+    <script src="/static/admin/static/common/layui/layui.js"></script>
+</head>
+
+<body id="login">
+<div class="login">
+    <h2>B1902后台模板</h2>
+    <form class="layui-form" method="post" target="_self" action="check">
+        <div class="layui-form-item">
+            <input type="text" name="name" placeholder="用户名" class="layui-input" required lay-verify="required">
+            <i class="layui-icon input-icon">&#xe66f;</i>
+        </div>
+        <div class="layui-form-item">
+            <input type="password" name="password" placeholder="密码"  class="layui-input" required lay-verify="required">
+            <i class="layui-icon input-icon">&#xe673;</i>
+        </div>
+
+        <div class="layui-form-item layui-col-xs6">
+            <input type="text" name="code" placeholder="验证码"  class="layui-input" required lay-verify="required">
+            <i class="layui-icon input-icon">&#xe679;</i>
+        </div>
+        <div class="layui-col-xs5 layui-col-xs-offset1">
+            <img style="width: 100%;height: 36px;border:1px solid #dedede;border-radius: 2px;" src="{:captcha_src()}" alt="captcha" onclick="this.src=this.src+'?'"/>
+        </div>
+
+        <div class="layui-form-item">
+            <button style="width: 100%" class="layui-btn" lay-submit lay-filter="login">立即登录</button>
+        </div>
+    </form>
+
+    <script>
+
+
+        layui.use('form', function () {
+            var form = layui.form,
+                layer = layui.layer,
+                $ = layui.jquery;
+
+
+            /*layer.tips('无需输入,请点击登录进入后台<br/>这个tips可随时去除!', '.layui-btn', {
+                tips: [3, '#333'],
+                time: 0
+            });*/
+
+            /*form.on('submit(login)', function (data) {
+                sessionStorage.isLgoin = 1; //模拟登录状态,实际使用时请删除掉
+
+                layer.load({
+                    shade: 0.5,
+                    time: 0,
+                });
+                setTimeout(function () {
+                    window.location.href = 'index';
+                },1000)
+
+                return false;
+            });*/
+        });
+    </script>
+</div>
+</body>
+
+</html>

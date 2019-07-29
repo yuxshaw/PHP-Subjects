@@ -1,0 +1,22 @@
+.tab-title{
+    /*background-color: #000000;*/
+    padding: 15px 0;
+}
+.title h3{
+    /*line-height: 56px;*/
+    margin: 0;
+    /*padding: 0;*/
+    /*color: #FFFFFF;*/
+}
+.search input{
+    /*margin-top: 15px;*/
+}
+table th{
+    text-align: center;
+}
+table td{
+    /*text-align: center;*/
+}
+.btn{
+    /*padding: 1px 6px;!important;*/
+}

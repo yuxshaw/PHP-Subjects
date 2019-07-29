@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>post</title>
+    <script src="./includes/js/jquery-3.1.1.js"></script>
+</head>
+<body>
+<form action="">
+    用户名：
+    <input type="text" name="user" id="user"><span></span><Br />
+    密&emsp;码：
+    <input type="password" name="pwd" id="pwd" /><br />
+    邮&emsp;箱：
+    <input type="email" name="email" id="email" /><span></span><br />
+    <input type="button" value="注册" id="sub">
+</form>
+</body>
+<script>
+    $(function () {
+        $('#user').blur(function () {
+            var user = $(this).val();
+            $.post({
+                url:'reg.php',
+                //type: 'json',
+                data:{user:user},
+                success:function (code) {
+                    info = JSON.parse(code); //转换为json对象
+                    console.log(info.user);
+                    if(info.user == 1){
+                        //用户名重复
+                        $('#user').next('span').html("<span style='color:red'>用户名重复</span>");
+
+                    }else if(info.user==2){
+                        $('#user').next('span').html("<span style='color:green'>用户名可用</span>");
+                    }
+                }
+            })
+        })
+        $('#email').blur(function () {
+            var email = $(this).val();
+            $.post({
+                url:'reg.php',
+                //type: 'json',
+                data:{email:email},
+                success:function (code) {
+                    info = JSON.parse(code); //转换为json对象
+                    console.log(info.user);
+
+                    if(info.email == 1){
+
+                        $('#email').next('span').html("<span style='color:red'>邮箱重复</span>");
+
+                    }else if(info.email==2){
+                        $('#email').next('span').html("<span style='color:green'>邮箱可用</span>");
+                    }
+                }
+            })
+        })
+    })
+</script>
+</html>

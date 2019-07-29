@@ -1,0 +1,60 @@
+
+    <div class="container theme-showcase" role="main">
+      <style>a:hover{text-decoration: none;}</style>
+      <p>
+
+        <a href="__DOMAIN__/index.php/index/index/index/category/{$data1.category}/cate/0">
+          <button class='btn btn-sm btn-default {if condition="$data1.cate eq 0"} active {/if}' type="button">全部</button>
+        </a>
+        {foreach name="$data1.sub_nav" item="vo"}
+        <a href="__DOMAIN__/index.php/index/index/index/category/{$data1.category}/cate/{$vo.cid}">
+          <button class='btn btn-sm btn-default {if condition="$data1.cate eq $vo.cid"} active {/if}' type="button">{$vo.cname}</button>
+        </a>
+        {/foreach}
+      </p>
+      <div class="row all-event-list mt20">
+        <!--<div class="col-md-3 col-sm-4 col-xs-12">
+          <div class="widget-event">
+            <a href="article.html"><img class="widget-event__banner lazy" src="__IMG__article_06.png"></a>
+            <div class="widget-event__info">
+              <h2 class="h4 title"><a href="article.html">未来人体科技也许是：耳朵听颜色、手臂听音乐</a></h2>
+              <ul class="widget-event__meta">
+                <li>时间：2015-09-19</li>
+              </ul>
+              <a class="btn btn-default btn-sm" href="article.html">查看</a>
+            </div>
+          </div>
+        </div>-->
+        {volist name="data1.article" id="item"}
+        <div class="col-md-3 col-sm-4 col-xs-12">
+          <div class="widget-event">
+            <a href="/article/{$item.aid}">
+              <img class="widget-event__banner lazy" src="__IMG__article_02.png">
+            </a>
+            <div class="widget-event__info">
+              <h2 class="h4 title"><a href="/article/{$item.aid}">{$item.title}</a></h2>
+              <ul class="widget-event__meta">
+                <li>时间：{$item.pubtime|date="y-m-d",###}</li>
+              </ul>
+              <a class="btn btn-default btn-sm" href="/article/{$item.aid}">查看</a>
+            </div>
+          </div>
+        </div>
+        {/volist}
+      </div>
+
+
+      <div class="text-center">
+        {$data1.page}
+        <!--<ul class="pagination">
+          <li class="active"><a href="javascript:void(0);">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li class="next"><a href="#" rel="next">下一页</a></li>
+        </ul>-->
+      </div>
+
+
+    </div>

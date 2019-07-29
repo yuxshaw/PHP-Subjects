@@ -1,0 +1,250 @@
+/* 公共样式 */
+
+.wrapper{
+    width: 1024px;
+    margin: 0 auto;
+}
+/* 线性背景 */
+.bg{
+    width: 100%;
+    height: 30px;
+    background-image: linear-gradient(to bottom,#a2c6d3,#ffffff);
+}
+/* 公共样式 */
+header,
+.content,
+footer{
+    width: 914px;
+    margin: 0 auto;
+}
+
+/* header样式 */
+/* logo */
+header .logo{
+    margin: -16px 0 0 20px;
+    height: 45px;
+}
+header .logo>a>h1{
+    font-size: 24px;
+    color: #3366cc;
+    line-height: 45px;
+    text-indent: 10px;
+    text-shadow: 4px 4px 4px #dddddd;
+}
+
+header .logo .fun{
+    margin-right: 10px;
+    margin-top: -15px;
+    width: 152px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header .logo .fun li{
+    width: 68px;
+    font-size: 12px;
+}
+header .logo .fun li>a{
+    color: #999999;
+    text-indent: 3px;
+}
+
+/* nav */
+nav{
+    background: url(../images/nav_bg.jpg) repeat-x;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    line-height: 28px;
+    margin-top: 8px;
+}
+nav .nav-bar{
+    width: 540px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+nav .nav-bar li{
+    text-align: center;
+    width: 90px;
+    background: url(../images/nav-bar-right.png) no-repeat right center;
+}
+nav .nav-bar li:last-child{
+    background: none;
+}
+nav .nav-bar li>a{
+    color: #ffffff;
+    font-size: 12px;
+}
+nav .nav-bar li>a:hover{
+    color: #99ff66;
+}
+nav .time{
+    /*margin-right: 56px;*/
+    line-height: 28px;
+    color: #ffffff;
+}
+nav .time>h3{
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 28px;
+    background: url(../images/nav_time.png) no-repeat left center;
+    text-indent: 1.6em;
+    margin-top: 5px;
+}
+
+/* banner */
+header .banner{
+    margin-top: 1px;
+}
+/* 线性背景 */
+.banner .bg{
+    width: 100%;
+    height: 70px;
+    background-image: linear-gradient(to bottom,#e1ebef,#ffffff);
+}
+
+
+
+/* aside */
+aside .message{
+    width: 214px;
+    height: 40px;
+    border: 1px solid #cccccc;
+    background-image: linear-gradient(to top,#ccebfa,#edf8fd);
+    line-height: 40px;
+    text-indent: 7px;
+}
+aside .message>img{
+    margin-top: 3px;
+}
+aside .message>a{
+    font-size: 18px;
+    color: #3366cc;
+}
+aside .news{
+    margin-top: 10px;
+    width: 214px;
+}
+aside .news h2{
+    width: 214px;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #cccccc;
+    border-bottom: none;
+    font-size: 12px;
+    color: #3366cc;
+    background-image: linear-gradient(to top,#ccebfa,#edf8fd);
+    text-indent: 4px;
+}
+aside .news h2>span{
+    font-size: 14px;
+    color: #999999;
+}
+aside .news ul{
+    width: 214px;
+    border: 1px solid #cccccc;
+    padding-bottom: 20px;
+    list-style-image: url(../images/right.png);
+    list-style-position: inside;
+}
+aside .news ul>li{
+    width: 188px;
+    margin: 0 auto;
+    border-bottom: 1px dashed #cccccc;
+    line-height: 30px;
+}
+aside .news ul>li>a{
+    font-size: 12px;
+    color: #666666;
+}
+
+aside .links{
+    margin-top: 10px;
+    width: 214px;
+}
+aside .links h2{
+    width: 214px;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #cccccc;
+    border-bottom: none;
+    font-size: 12px;
+    color: #3366cc;
+    background-image: linear-gradient(to top,#ccebfa,#edf8fd);
+    text-indent: 4px;
+}
+aside .links h2>span{
+    font-size: 14px;
+    color: #999999;
+}
+aside .links ul{
+    width: 214px;
+    border: 1px solid #cccccc;
+    padding-bottom: 20px;
+    list-style-image: url(../images/right.png);
+    list-style-position: inside;
+}
+aside .links ul>li{
+    width: 188px;
+    margin: 0 auto;
+    border-bottom: 1px dashed #cccccc;
+    line-height: 30px;
+}
+aside .links ul>li>a{
+    font-size: 12px;
+    color: #666666;
+}
+
+
+
+/* footer */
+footer{
+    height: 185px;
+    border-top: 5px solid #5678ff;
+}
+footer .left{
+    margin-top: 19px;
+    margin-left: 18px;
+}
+
+footer .left p{
+    font-size: 12px;
+    color: #666666;
+    line-height: 20px;
+}
+footer .right{
+    margin: 12px 8px;
+}
+
+
+
+/*分页样式*/
+.pageList{
+    margin: 30px auto;
+    text-align: center;
+    width: 208px;
+    display: flex;
+    justify-content: space-between;
+}
+.pageList>li>a{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #e6e7e1;
+    font-size: 12px;
+    color: #0099cc;
+    text-align: center;
+    line-height: 20px;
+}
+.pageList>li>a:hover{
+    border-color: #0099cc;
+}
+.pageList>li:first-child>a,
+.pageList>li:last-child>a{
+    width: 58px;
+    height: 20px;
+}
+
+.active > a{
+    background-color: #CCCCCC;
+}

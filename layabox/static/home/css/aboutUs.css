@@ -1,0 +1,132 @@
+/* 轮播图 */
+.banner img{
+    width: 100%;
+}
+/* 公司简介模块 */
+#brief{
+    padding: 60px 0 65px;
+}
+
+#brief .brief-content h2{
+    font-size: 36px;
+    color: #2a2a2a;
+    margin-bottom: 35px;
+}
+
+#brief .brief-content h3{
+    font-size: 20px;
+    color: #2a2a2a;
+    margin: 0;
+    line-height: 24px;
+}
+
+#brief .brief-content p{
+    font-size: 14px;
+    color: #2a2a2a;
+    line-height: 21px;
+    text-indent: 2em;
+    margin-top: 30px;
+}
+#brief .brief-img{
+    padding-top: 150px;
+}
+#brief .brief-img>img{
+    width: 303px;
+    height: 176px;
+}
+
+/* invite样式 */
+#invite{
+    background-color: #8cc11f;
+    width: 100%;
+    padding: 80px 0 72px;
+}
+
+#invite .inv-title h2{
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+#invite .inv-content p,#invite .inv-email p{
+    font-size: 16px;
+    color: #fff;
+    line-height: 32px;
+}
+
+#invite .inv-email .mail{
+    width: 220px;
+    height: 48px;
+    background-color: #fff;
+    color: #8cc11f;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 24px;
+}
+
+/* jobs样式 */
+#jobs{
+    padding: 50px 0 60px;
+}
+
+#jobs .job-list{
+    padding-top: 46px;
+    padding-bottom: 56px;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+#jobs .job-list:last-child{
+    border: none;
+}
+
+#jobs .job-list h3{
+    font-size: 26px;
+    color: #8cc11f;
+    margin: 0;
+    line-height: 78px;
+}
+
+#jobs .job-list h4{
+    margin: 0;
+    font-size: 18px;
+    color: #2a2a2a;
+    line-height: 36px;
+}
+
+#jobs .job-list p{
+    font-size: 14px;
+    color: #2a2a2a;
+    text-indent: 2em;
+}
+
+
+/* contact样式 */
+#contact{
+    background-color: #f4f4f4;
+    padding: 26px 0 62px;
+}
+#contact .contact-title{
+    font-size: 36px;
+    color: #2a2a2a;
+    margin-bottom: 40px;
+}
+#contact .add{
+    margin-bottom: 20px;
+}
+#contact .add>div{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 8px 0 8px 16px;
+    box-shadow: #e3e3e3 0 0 2px 2px;
+}
+#contact .add .media-body{
+    line-height: 72px;
+}
+#contact .add .media-body>h4{
+    margin: 0;
+    line-height: 72px;
+    font-size: 16px;
+    color: #2a2a2a;
+}

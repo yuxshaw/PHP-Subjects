@@ -1,0 +1,43 @@
+<div class="f_bg">
+    <div class="ftnav">
+        <ul>
+            <li><a href="index.html" >网站首页</a></li>
+            <li><a href="case.html" >合作案例</a></li>
+            <li><a href="news.html" >新闻中心</a></li>
+            <li><a href="zhaopin.html" >人才招聘</a></li>
+            <li><a href="about.html" >关于我们</a></li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+    <div class="line">&nbsp;</div>
+    <div class="foot clearfix">
+        <div class="f_l"><span>友情链接：</span><a href=""
+                                              target="_blank">网站模板</a></div>
+        <div class="f_r"> 版权所有©装修有限公司&emsp;苏ICP备12345678号</div>
+    </div>
+</div>
+</body>
+
+</html>
+<script>
+    var li = document.getElementById('nav').children;
+    for (var i=0; i<li.length; i++){
+        var li_index = li[i];
+        console.log(li_index);
+        if (li_index.children[0].href == String(window.location)){
+            li_index.setAttribute('class','now');
+        }
+    }
+
+
+    // var navRight = document.getElementById("navRight");
+    // console.log(navRight.children.length);
+    // for(var i=0;i<navRight.children.length;i++){
+    //     navRight.children[i].setAttribute("class","");//移除所有的li的class名字
+    //     var li_index = navRight.children[i];//获取当前li
+    //     console.log(li_index);
+    //     if(li_index.children[0].href == String(window.location)){
+    //         li_index.setAttribute("class","active");
+    //     }
+    // }
+</script>

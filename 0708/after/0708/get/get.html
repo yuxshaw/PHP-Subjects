@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery-3.1.1.js"></script>
+    <script>
+        // $.get() 方法
+        $(function () {
+            $('#btn').click(function () {
+                //1. $.get 获取文本
+                /*$.get(
+                    'demo.txt', //url
+                    function (data) {//回调函数
+                        //alert(data);
+                        $('#box').text(data);
+                    }
+                );*/
+                
+
+                //2. $.get 获取 服务器端返回的 xml 文件
+                /*$.get('create_xml.php',function (data) {
+
+                    var xmlObj = $(data).children('student');
+                    var stu = $(xmlObj).children('stu');
+
+                    var str ='';
+                    stu.each(function () {
+                        str += $(this).children('name').text()+':'+
+                            $(this).children('age').text()+'<br />';
+                    })
+
+                    $('#box').html(str);
+
+                })*/
+                
+                
+                //3. $.get 获取 xml文件
+               /* $.get('stu.xml',function (data) {
+                    var book = $(data).children('books').children('book');
+                    var str = '';
+                    book.each(function () {
+                        str += $(this).children('name').text()+'<br />'+
+                                $(this).children('author').text()+'<br />'+
+                                $(this).children('date').text()+'<hr />';
+                    })
+                    $('#box').html(str);
+                })*/
+
+
+               //4. $.get() 获取 json 文件
+               /*$.get('stu.json',function (data) {
+                   var stuObj = data.student
+                   // console.log(stuObj);
+
+                   var str = '<table border="1" style="border-collapse: collapse"><tr><th>姓名</th><th>年龄</th><th>性别</th></tr>';
+                   for (var i=0;i<stuObj.length;i++){
+                       /!*str += stuObj[i].name + ',' +
+                           stuObj[i].age + ',' +
+                           stuObj[i].sex+'<hr>';*!/
+                       str += '<tr>' + '<td>'+stuObj[i].name+'</td>'+
+                               '<td>'+stuObj[i].age+'</td>'+
+                               '<td>'+stuObj[i].sex+'</td></tr>';
+                   }
+                   str += '</table>';
+                   $('#box').html(str);
+
+               })*/
+                
+               $.get('https://www.tianqiapi.com/api/?version=v1',function (info) {
+                   var city = info.city;
+                   var data = info.data;
+                   console.log(data);
+
+
+
+                   var str = '<table border="2" cellpadding="4" cellspacing="0" style="width: 500px;margin: auto;border-collapse: collapse"><caption>'+city+'天气'+'</caption>' + '<tr><th>星期</th><th>天气</th><th>风向</th><th>温度</th></tr>';
+                   for (var i=0;i<data.length;i++){
+
+                       str += '<tr>'+'<td>'+data[i].week +'</td>'+
+                               '<td>'+data[i].wea+'</td>'+
+                               '<td>'+data[i].win+'</td>'+
+                               '<td>'+data[i].tem1+'</td>'+
+                               '</tr>';
+                   }
+                   str += '</table>';
+
+                   $('#box').html(str);
+               })
+                
+            });
+        })
+    </script>
+</head>
+<body>
+<input type="button" id="btn" value="获取">
+<div id="box"></div>
+</body>
+</html>

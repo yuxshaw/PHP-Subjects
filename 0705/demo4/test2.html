@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="includes/js/jquery-3.1.1.js"></script>
+</head>
+<body>
+<input type="button" id="btn" value="获取">
+<div id="box"></div>
+</body>
+<script>
+    $(function () {
+        $('#btn').click(function () {
+            $.ajax({
+                type:'GET', //提交类型
+                url:'aa.txt',   //地址
+                dataType:'text',  //
+                success:function (data) {
+                    //alert(data);
+                    $('#box').html(data);
+                },
+                statusCode:{200:function(){
+                    alert('hello');
+                }}
+            })
+        })
+
+    })
+</script>
+</html>

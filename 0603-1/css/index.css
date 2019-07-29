@@ -1,0 +1,17 @@
+.head{
+    background-color: #222;
+    height: 50px;
+    paddding-left:10px;
+    padding-right: 10px;
+}
+.head span{
+    float: left;
+    color: #ddd;
+}
+.head form{
+    float: right;
+}
+table{
+    border-collapse: collapse;
+    margin: auto;
+}

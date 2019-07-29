@@ -1,0 +1,27 @@
+article .center{
+    margin-top: 30px;
+}
+
+article .bottom{
+    margin-top: 62px;
+    margin-bottom: 85px;
+}
+article .bottom h2{
+    font-size: 14px;
+    color: #1647a1;
+    background: url(../images/circle_blue.png) no-repeat left center;
+    text-indent: 1em;
+}
+article .bottom ul{
+    margin-top: 14px;
+}
+article .bottom ul li{
+    line-height: 32px;
+    background: url(../images/square_bg.png) no-repeat left center;
+    text-indent: 1em;
+    font-size: 12px;
+}
+article .bottom ul li>span{
+    font-size: 12px;
+    color: #666666;
+}

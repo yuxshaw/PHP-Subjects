@@ -1,0 +1,340 @@
+/* banner样式 */
+.banner{
+    width: 100%;
+    background-color: #f6ce2a;
+}
+
+.banner .title{
+    width: 66%;
+    margin: auto;
+    text-align: center;
+}
+
+.banner .title h2{
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: bold;
+    padding-top: 7%;
+}
+
+.banner .title p{
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 2%;
+}
+
+.banner .title img{
+    margin: 7% auto 0;
+}
+
+
+/* 二级导航栏样式 */
+.snav{
+    width: 100%;
+    background-color: #f3f3f3;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.snav .list{
+    width: 66%;
+    margin: -1% auto;
+    text-align: center;
+}
+
+.snav .list ul{
+    width: 100%;
+    text-align: center;
+}
+
+.snav .list ul li{
+    float: left;
+    width: 16.6%;
+    text-align: center;
+}
+
+.snav .list ul li a{
+    font-size: 14px;
+    color: #000000;
+    transition: color .35s linear;
+}
+
+.snav .list ul li:hover> a{
+    color: #f6ce2a;
+    /* transition: color .35s linear; */
+}
+
+/* 内容样式 */
+.content{
+    width: 100%;
+    background-color: skyblue;
+}
+
+/* app样式 */
+.content .app{
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.content .app .con{
+    width: 66%;
+    margin: 0 auto;
+}
+
+.content .app .con img{
+    float: left;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.content .app .text{
+    float: right;
+    width: 46.6%;
+    text-align: center;
+}
+
+.content .app .text h2{
+    margin-top: 30%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.content .app .text span{
+    display: block;
+    margin-top: 1%;
+    font-size: 18px;
+    color: #808080;
+}
+
+
+.content .app .text p{
+    margin-top: 7%;
+    font-size: 14px;
+    color: #4c4c4c;
+}
+
+/* web样式 */
+.content .web{
+    width: 100%;
+    background-color: #f3f3f3;
+}
+
+.content .web .con{
+    width: 66%;
+    margin: 0 auto;
+}
+
+.content .web .text{
+    float: left;
+    width: 46.6%;
+    text-align: center;
+}
+
+.content .web .text h2{
+    margin-top: 30%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.content .web .text span{
+    display: block;
+    margin-top: 1%;
+    font-size: 18px;
+    color: #808080;
+}
+
+
+.content .web .text p{
+    margin-top: 7%;
+    font-size: 14px;
+    color: #4c4c4c;
+}
+
+.content .web .con img{
+    float: right;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/* b2b样式 */
+.content .b2b{
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.content .b2b .con{
+    width: 66%;
+    margin: 0 auto;
+}
+
+.content .b2b .con img{
+    float: left;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.content .b2b .text{
+    float: right;
+    width: 46.6%;
+    text-align: center;
+}
+
+.content .b2b .text h2{
+    margin-top: 15%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.content .b2b .text span{
+    display: block;
+    margin-top: 1%;
+    font-size: 18px;
+    color: #808080;
+}
+
+
+.content .b2b .text p{
+    margin-top: 7%;
+    font-size: 14px;
+    color: #4c4c4c;
+}
+
+/* solu样式 */
+.content .solu{
+    width: 100%;
+    background-color: #f3f3f3;
+}
+
+.content .solu .con{
+    width: 66%;
+    margin: 0 auto;
+}
+
+.content .solu .text{
+    float: left;
+    width: 46.6%;
+    text-align: center;
+}
+
+.content .solu .text h2{
+    margin-top: 25%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.content .solu .text span{
+    display: block;
+    margin-top: 1%;
+    font-size: 18px;
+    color: #808080;
+}
+
+
+.content .solu .text p{
+    margin-top: 7%;
+    font-size: 14px;
+    color: #4c4c4c;
+}
+
+.content .solu .con img{
+    float: right;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/* seo样式 */
+.content .seo{
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.content .seo .con{
+    width: 66%;
+    margin: 0 auto;
+}
+
+.content .seo .con img{
+    float: left;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.content .seo .text{
+    float: right;
+    width: 46.6%;
+    text-align: center;
+}
+
+.content .seo .text h2{
+    margin-top: 25%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.content .seo .text span{
+    display: block;
+    margin-top: 1%;
+    font-size: 18px;
+    color: #808080;
+}
+
+
+.content .seo .text p{
+    margin-top: 7%;
+    font-size: 14px;
+    color: #4c4c4c;
+}
+
+/* bs样式 */
+.content .bs{
+    width: 100%;
+    background-color: #f3f3f3
+}
+
+.content .bs .con{
+    width: 66%;
+    margin: 0 auto;
+}
+
+.content .bs .text{
+    float: left;
+    width: 46.6%;
+    text-align: center;
+}
+
+.content .bs .text h2{
+    margin-top: 20%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.content .bs .text span{
+    display: block;
+    margin-top: 1%;
+    font-size: 18px;
+    color: #808080;
+}
+
+
+.content .bs .text p{
+    margin-top: 7%;
+    font-size: 14px;
+    color: #4c4c4c;
+}
+
+.content .bs .con img{
+    float: right;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+.content .bs .imgs{
+    margin-top: 1%;
+    margin-left: 14.3%;
+}

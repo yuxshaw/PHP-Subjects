@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            function get_text(url,fnSuc) {
+                var ajax = new XMLHttpRequest();
+
+                ajax.onreadystatechange = function(){
+                    if (ajax.readyState == 4 && ajax.status == 200){
+                        // document.getElementById('box').innerText = ajax.responseText;
+                        fnSuc(ajax.responseText);
+                    }
+                }
+
+                ajax.open('get',url,true);
+                ajax.send(null);
+
+            }
+
+            var btn = document.getElementById('btn');
+            btn.onclick = function () {
+                get_text('test.txt',function (str) {
+                    alert(str);
+                });
+            }
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <input id="btn" type="button" value="戳一戳">
+    <div id="box"></div>
+</body>
+</html>

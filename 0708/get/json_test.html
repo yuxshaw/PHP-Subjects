@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../includes/jquery-3.1.1.js"></script>
+</head>
+<body>
+    <input type="button" id="btn" value="戳一下">
+    <input type="button" id="btn1" value="戳一下">
+    <div id="box"></div>
+    <div id="box1"></div>
+
+
+    <script>
+        $(function () {
+            // $('#btn').click(function () {
+            //     $.get('create_json.php',function (data) {
+            //         // alert(data);
+            //         // 将json格式字符串转换为json对象
+            //         var jsonOBJ = JSON.parse(data);
+            //         var name1 = jsonOBJ.name1;
+            //         var name2 = jsonOBJ.name2;
+            //         var name3 = jsonOBJ.name3;
+            //         var str = '<ul style="list-style-type: none;">'+'<li>'+name1+'</li>'+'<li>'+name2+'</li>'+'<li>'+name3+'</li>'+'</ul>';
+            //     });
+            // });
+
+            $('#btn1').click(function () {
+                $.get(
+                    'https://www.tianqiapi.com/api/?='+Math.random(),
+                    {version:"v1",city:"深圳"},
+                    function (info) {
+                        // console.log(info);
+                        var data = info.data;
+                        var air_level = data[0].air_level;
+                        var air_tips = data.air_tips;
+                        var week = data.week;
+                        var wea = data.wea;
+                        var tem = data.tem;
+                        var tem1 = data.tem1;
+                        var tem2 = data.air_tips;
+                    }
+                )
+            })
+        })
+    </script>
+
+</body>
+</html>

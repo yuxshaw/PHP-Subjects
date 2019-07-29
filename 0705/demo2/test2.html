@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function check_code() {
+            var user = document.getElementById('user');
+            info = user.value;
+            info = encodeURIComponent(info);
+            var ajax = new XMLHttpRequest();
+            ajax.onreadystatechange = function(){
+                if (ajax.readyState == 4 && ajax.status ==200){
+                    alert(ajax.responseText);
+                }
+            }
+            ajax.open('get','check.php?name='+info,true);
+            ajax.send(null);
+        }
+    </script>
+</head>
+<body>
+    用户：<input type="text" name="user" id="user" onblur="check_code()">
+</body>
+</html>
