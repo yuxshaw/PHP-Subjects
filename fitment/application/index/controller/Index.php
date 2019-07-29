@@ -9,9 +9,24 @@ class Index extends Common
 {
     public function index()
     {
-//        $data = array(
-//        );
-//        $this->assign('data',$data);
+
+        // 查询最新的两条新闻
+        $news = Db::name('news')
+            ->order('news_time','DESC')
+            ->limit(2)
+            ->select();
+
+        // 查询前10条装修案例
+        $cases = Db::name('case')
+            ->limit(10)
+            ->select();
+
+        $datas = array(
+            'news' => $news,
+            'cases' => $cases,
+        );
+        $this->assign('datas',$datas);
+
         return $this->fetch();
     }
 }

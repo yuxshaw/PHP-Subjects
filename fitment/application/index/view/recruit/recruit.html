@@ -18,14 +18,15 @@
             <div class="scd_m">
                 <ul class="list">
                     {foreach $re_data.res as $item}
-                    <li><a href="zhaopin_info.html" >{$item.r_desc}</a></li>
+                    <li><a href="/index/recruit/recruitinfo/rid/{$item.r_id}" >{$item.r_desc}</a></li>
                     {/foreach}
 <!--                    <li><a href="zhaopin_info.html" >【技术助理】招聘3名技术助理，工资5000-8000（￥）</a></li>-->
 <!--                    <li><a href="zhaopin_info2.html" >【技术工程师】招聘1名技术工程师，工资10000-20000（￥）</a></li>-->
                 </ul>
                 <div class="space_hx">&nbsp;</div>
-                <div class="pages"><a href="">首页</a><a href="">上一页</a><a href="" class="cur">1</a><a href="">2</a><a
-                        href="">3</a><a href="">…</a><a href="">下一页</a><a href="">尾页</a></div>
+                <div class="pages">
+                    {$re_data.page}
+                </div>
             </div>
         </div>
     </div>

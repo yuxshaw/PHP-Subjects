@@ -21,20 +21,20 @@
                 {foreach $case_data.case as $item}
                 <dl class="news clearfix">
                     <dt>
-                        <a href="case_info.html" ><img src="__STATIC__/images/case/{$item.c_img}" alt="" /></a>
+                        <a href="/index/cases/casesinfo/cid/{$item.c_id}" ><img src="__STATIC__/images/case/{$item.c_img}" alt="" /></a>
                     </dt>
                     <dd>
                         <div class="title">
-                            <p><a href="case_info.html" >{$item.c_title}</a></p><span>{$item.c_time|date="Y-m-d",###}</span>
+                            <p><a href="/index/cases/casesinfo/cid/{$item.c_id}" >{$item.c_title}</a></p><span>{$item.c_time|date="Y-m-d",###}</span>
                         </div>
                         <div class="des">{$item.c_content}</div>
-                        <div class="more"><a href="case_info.html" >查看详情>></a></div>
+                        <div class="more"><a href="/index/cases/casesinfo/cid/{$item.c_id}" >查看详情>></a></div>
                     </dd>
                 </dl>
                 {/foreach}
                 <div class="space_hx">&nbsp;</div>
                 <div class="pages">
-<!--                    {$case_data.page}-->
+                    {$case_data.page}
                 </div>
             </div>
         </div>

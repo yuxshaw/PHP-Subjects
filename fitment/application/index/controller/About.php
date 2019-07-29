@@ -12,10 +12,16 @@ class About extends Common
             ->where('p_id',$category)
             ->select();
 
+        // 查询当前cate 下的所有信息
+        $info = Db::name('about')
+            ->where('n_id',$cate)
+            ->select();
+
         $about_data = array(
             'sub_nav' => $sub_nav,
             'category' => $category,
-            'cate' => $cate
+            'cate' => $cate,
+            'info' => $info
         );
         $this->assign('about_data',$about_data);
         return $this->fetch();

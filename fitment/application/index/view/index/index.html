@@ -3,8 +3,9 @@
         <div class="t_news">
             <div class="t_news"><b>热点：</b>
                 <ul class="news_li">
-                    <li><a href="news_info.html" target="_blank">地方怕乱不怕小 看小厨房布局如何逆袭</a></li>
-                    <li><a href="news_info2.html" target="_blank">家的两重性视角 解读2016家居流行色</a></li>
+                    {foreach $datas.news as $item}
+                    <li><a href="/index/news/newsinfo/nid/{$item.news_id}" target="_blank">{$item.news_title}</a></li>
+                    {/foreach}
                 </ul>
                 <ul class="swap"></ul>
             </div>
@@ -15,25 +16,25 @@
         <li>
             <div class="tu"><a href="about.html" ><img src="__STATIC__/upload/pic3.jpg" alt="" /></a></div>
             <div class="wen">
-                <div class="name"><a href="about.html" >公司介绍</a></div>
+                <div class="name"><a href="/index/about/about/category/5" >公司介绍</a></div>
                 <div class="des">在这里，创业的氛围让每个人都积极创新，为做出美好的事情而努力。在这里没有大公司的等级观念，每个人都可以随时提出自己的创意和想法。</div>
-                <div class="more"><a href="about.html" >查看更多</a></div>
+                <div class="more"><a href="/index/about/about/category/5" >查看更多</a></div>
             </div>
         </li>
         <li>
             <div class="tu"><a href="case.html" ><img src="__STATIC__/upload/pic2.jpg" alt="" /></a></div>
             <div class="wen">
-                <div class="name"><a href="cases.html" >合作案例</a></div>
+                <div class="name"><a href="/index/cases/cases/category/2" >合作案例</a></div>
                 <div class="des">公司签署的每一笔订单，我们都全力以赴，精心的准备，全力的实施</div>
-                <div class="more"><a href="case.html" >查看更多</a></div>
+                <div class="more"><a href="/index/cases/cases/category/2" >查看更多</a></div>
             </div>
         </li>
         <li>
             <div class="tu"><a href="news.html" ><img src="__STATIC__/upload/pic1.jpg" alt="" /></a></div>
             <div class="wen">
-                <div class="name"><a href="news.html" >新闻中心</a></div>
+                <div class="name"><a href="/index/news/news/category/3" >新闻中心</a></div>
                 <div class="des"> 这里及时了解装修公司的最新资讯和优惠信息</div>
-                <div class="more"><a href="news.html" >查看更多</a></div>
+                <div class="more"><a href="/index/news/news/category/3" >查看更多</a></div>
             </div>
         </li>
     </ul>
@@ -41,76 +42,15 @@
         <div class="jcj-tit">经典案例/CASE</div>
         <div class="jcj-con">
             <ul class="case">
+                {foreach $datas.cases as $item}
                 <li>
-                    <div class="picylbtn"><img src="__STATIC__/images/case/caseli1.jpg" >
+                    <div class="picylbtn"><img src="__STATIC__/images/case/{$item.c_img}" >
                         <div class="hidenbox">
-                            <p>工厂装修业务流程介绍</p><a href="case_info.html" >查看案例</a>
+                            <p>{$item.c_title}</p><a href="/index/cases/casesinfo/cid/{$item.c_id}" >查看案例</a>
                         </div>
                     </div>
                 </li>
-                <li>
-                    <div class="picylbtn"><img src="__STATIC__/images/case/caseli2.jpg" >
-                        <div class="hidenbox">
-                            <p>景观改造业务流程介绍</p><a href="case_info2.html" >查看案例</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="picylbtn"><img src="__STATIC__/images/case/caseli3.jpg" >
-                        <div class="hidenbox">
-                            <p>家庭装修业务流程介绍</p><a href="case_info3.html" >查看案例</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="picylbtn"><img src="__STATIC__/images/case/caseli4.jpg" >
-                        <div class="hidenbox">
-                            <p>集成墙板业务流程介绍</p><a href="case_info4.html" >查看案例</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="picylbtn"><img src="__STATIC__/images/case/caseli5.jpg" >
-                        <div class="hidenbox">
-                            <p>景观改造业务流程介绍</p><a href="case_info5.html" >查看案例</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="picylbtn"><img src="__STATIC__/images/case/caseli6.jpg" >
-                        <div class="hidenbox">
-                            <p>集成吊顶业务流程介绍</p><a href="case_info6.html" >查看案例</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="picylbtn"><img src="__STATIC__/images/case/caseli1.jpg" >
-                        <div class="hidenbox">
-                            <p>工厂装修业务流程介绍</p><a href="case_info.html" >查看案例</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="picylbtn"><img src="__STATIC__/images/case/caseli5.jpg" >
-                        <div class="hidenbox">
-                            <p>景观改造业务流程介绍</p><a href="case_info5.html" >查看案例</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="picylbtn"><img src="__STATIC__/images/case/caseli2.jpg" >
-                        <div class="hidenbox">
-                            <p>景观改造业务流程介绍</p><a href="case_info2.html" >查看案例</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="picylbtn"><img src="__STATIC__/images/case/caseli4.jpg" >
-                        <div class="hidenbox">
-                            <p>集成墙板业务流程介绍</p><a href="case_info4.html" >查看案例</a>
-                        </div>
-                    </div>
-                </li>
+                {/foreach}
             </ul>
         </div>
         <div class="jcjxc">

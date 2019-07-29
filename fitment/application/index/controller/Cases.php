@@ -31,4 +31,13 @@ class Cases extends Common
         $this->assign('case_data',$case_data);
         return $this->fetch();
     }
+
+    public function casesInfo($cid){
+        $info = Db::name('case')
+            ->where('c_id',$cid)
+            ->find();
+        $this->assign('info',$info);
+
+        return $this->fetch();
+    }
 }
