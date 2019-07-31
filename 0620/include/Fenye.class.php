@@ -8,12 +8,13 @@
         private $limit;
         private $size;
 
-        public function __construct($current, $count, $limit, $size)
+        public function __construct($current, $count, $limit, $size,$class='pagination')
         {
             $this->current = $current;
             $this->count = $count;
             $this->limit = $limit;
             $this->size = $size;
+            $this->class = $class;
         }
 
         /**
@@ -63,6 +64,7 @@
 
                 $pages = ceil($this->count / $this->limit);   //向上取整算出页码总数
 
+                $str .= "<ul class='".$this->class."'>";
                 // 首页
                 if ($this->current == 1) {
                     $str .= "<li class='disabled'><a href='#'>首页</a></li>";

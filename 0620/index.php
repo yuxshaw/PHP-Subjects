@@ -131,12 +131,10 @@
             </table>
 
             <nav class="text-center" aria-label="...">
-                <ul class="pagination">
                     <?php //echo page($current, $count, $limit, $size);?>
 
                     <?php echo $page->pg();?>
 
-                </ul>
             </nav>
         </div>        
     </div>
