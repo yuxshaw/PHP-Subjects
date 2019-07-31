@@ -21,9 +21,15 @@ class Index extends Common
             ->limit(10)
             ->select();
 
+        // 查询首页展示信息
+        $msg = Db::name('home')
+            ->limit(3)
+            ->select();
+
         $datas = array(
             'news' => $news,
             'cases' => $cases,
+            'msg' => $msg,
         );
         $this->assign('datas',$datas);
 

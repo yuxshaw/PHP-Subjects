@@ -13,30 +13,32 @@
     </div>
     <div class="space_hx">&nbsp;</div>
     <ul class="i_ma clearfix">
+        {foreach $datas.msg as $item}
         <li>
-            <div class="tu"><a href="about.html" ><img src="__STATIC__/upload/pic3.jpg" alt="" /></a></div>
+            <div class="tu"><a href="{$item.h_url}" ><img src="__STATIC__/upload/{$item.h_img}" alt="" /></a></div>
             <div class="wen">
-                <div class="name"><a href="/index/about/about/category/5" >公司介绍</a></div>
-                <div class="des">在这里，创业的氛围让每个人都积极创新，为做出美好的事情而努力。在这里没有大公司的等级观念，每个人都可以随时提出自己的创意和想法。</div>
-                <div class="more"><a href="/index/about/about/category/5" >查看更多</a></div>
+                <div class="name"><a href="{$item.h_url}" >{$item.h_title}</a></div>
+                <div class="des">{$item.h_desc}</div>
+                <div class="more"><a href="{$item.h_url}" >查看更多</a></div>
             </div>
         </li>
-        <li>
-            <div class="tu"><a href="case.html" ><img src="__STATIC__/upload/pic2.jpg" alt="" /></a></div>
-            <div class="wen">
-                <div class="name"><a href="/index/cases/cases/category/2" >合作案例</a></div>
-                <div class="des">公司签署的每一笔订单，我们都全力以赴，精心的准备，全力的实施</div>
-                <div class="more"><a href="/index/cases/cases/category/2" >查看更多</a></div>
-            </div>
-        </li>
-        <li>
-            <div class="tu"><a href="news.html" ><img src="__STATIC__/upload/pic1.jpg" alt="" /></a></div>
-            <div class="wen">
-                <div class="name"><a href="/index/news/news/category/3" >新闻中心</a></div>
-                <div class="des"> 这里及时了解装修公司的最新资讯和优惠信息</div>
-                <div class="more"><a href="/index/news/news/category/3" >查看更多</a></div>
-            </div>
-        </li>
+        {/foreach}
+<!--        <li>-->
+<!--            <div class="tu"><a href="case.html" ><img src="__STATIC__/upload/pic2.jpg" alt="" /></a></div>-->
+<!--            <div class="wen">-->
+<!--                <div class="name"><a href="/index/cases/cases/category/2" >合作案例</a></div>-->
+<!--                <div class="des">公司签署的每一笔订单，我们都全力以赴，精心的准备，全力的实施</div>-->
+<!--                <div class="more"><a href="/index/cases/cases/category/2" >查看更多</a></div>-->
+<!--            </div>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <div class="tu"><a href="news.html" ><img src="__STATIC__/upload/pic1.jpg" alt="" /></a></div>-->
+<!--            <div class="wen">-->
+<!--                <div class="name"><a href="/index/news/news/category/3" >新闻中心</a></div>-->
+<!--                <div class="des"> 这里及时了解装修公司的最新资讯和优惠信息</div>-->
+<!--                <div class="more"><a href="/index/news/news/category/3" >查看更多</a></div>-->
+<!--            </div>-->
+<!--        </li>-->
     </ul>
     <div class="jingdiananli">
         <div class="jcj-tit">经典案例/CASE</div>

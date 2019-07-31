@@ -40,8 +40,10 @@
 <!--幻灯片-->
 <div id="banner" class="banner">
     <div id="owl-demo" class="owl-carousel">
-        <a class="item" target="_blank" href="" style="background-image:url('__STATIC__/upload/banner.jpg')"></a>
-        <a class="item" target="_blank" href="" style="background-image:url('__STATIC__/upload/banner2.jpg')"></a>
+        {foreach $data.banner as $item}
+        <a class="item" target="_blank" href="" style="background-image:url('__STATIC__/upload/{$item.b_img}')"></a>
+        {/foreach}
+<!--        <a class="item" target="_blank" href="" style="background-image:url('__STATIC__/upload/banner2.jpg')"></a>-->
     </div>
 </div>
 <!--幻灯片-->
