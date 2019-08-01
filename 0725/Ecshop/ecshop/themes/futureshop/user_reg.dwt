@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FutureShop 注册</title>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/user_reg.css"/>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/footer.css"/>
+	{* 包含脚本文件 *}
+	{insert_scripts files='common.js,index.js'}
+</head>
+<body>
+<!--FutureShop 注册 start-->
+	<div id="container">
+	<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+	<!--main start-->
+		<div class="main">
+            <div class="FS_reg">
+                <div class="user_reg">
+                    <div class="reg_list">
+                        <div class="reg_left">
+                            <h2><span>用户注册</span></h2>
+                            <form action="#" method="post">
+                                <p class="username mar_b"><span>用户名</span><input type="text" name="username" placeholder="用户名"/></p>
+                                <p class="mar_b"><span>密码</span><input type="password" name="password" placeholder="密码"/></p>
+                                <p class="mar_b"><span>确认密码</span><input type="password" name="re_pw" placeholder="确认密码"/></p>
+                                <p><span>Email</span><input type="text" name="email" placeholder="Email"/></p>
+                                <p class="check"><span>&nbsp;</span><input type="checkbox"/>我已经阅读并接受<a href="#">用户协议</a></p>
+                                <p class="dosubmit"><span>&nbsp;</span><input type="submit" name="dosubmit" value="立即登录"/></p>
+                            </form>
+                        </div>
+                        <div class="reg_right">
+                            <p>已经有账号？</p>
+                            <p><a href="#">立即登录</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	<!--main end-->
+		<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+	</div>
+<!--FutureShop 注册 end-->
+</body>
+</html>
+<script src="themes/futureshop/js/jq/jquery1.42.min.js"></script>
+<script src="themes/futureshop/js/user_down.js"></script>

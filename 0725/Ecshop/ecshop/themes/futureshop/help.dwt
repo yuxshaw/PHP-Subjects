@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FutureShop help</title>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/help.css"/>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/footer.css"/>
+</head>
+<body>
+<!--FutureShop help start-->
+	<div id="container">
+		<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+	<!--main start-->
+		<div class="main">
+            <div class="FS_help">
+            	<div class="current">
+            		<div class="current_detail">
+            			<p>当前位置:<a href="index.html">首页</a> &gt; <a href="#">使用帮助</a> &gt; 积分说明</p>
+            		</div>
+            	</div>
+            	<div class="main_help">
+            		<div class="help_detail">
+            			<div class="h_d_left">
+            				<div class="help_nav">
+            					<h2>服务保障</h2>
+            					<p><a href="#">&gt;正品保证</a></p>
+            					<p><a href="#">&gt;30天退换货</a></p>
+            				</div>
+            				<div class="help_nav">
+            					<h2>使用帮助</h2>
+            					<p><a href="#">&gt;积分说明</a></p>
+            					<p><a href="#">&gt;购物流程</a></p>
+            					<p><a href="#">&gt;代金券规则</a></p>
+            				</div>
+            				<div class="help_nav">
+            					<h2>支付方式</h2>
+            					<p><a href="#">&gt;货到付款</a></p>
+            					<p><a href="#">&gt;在线支付</a></p>
+            					<p><a href="#">&gt;银行转账</a></p>
+            				</div>
+            				<div class="help_nav">
+            					<h2>售后服务</h2>
+            					<p><a href="#">&gt;退换货政策</a></p>
+            					<p><a href="#">&gt;发票说明</a></p>
+            					<p><a href="#">&gt;退款与提现</a></p>
+            				</div>
+            			</div>
+            			<div class="h_d_right">
+            				<h2>积分说明</h2>
+            				<div class="state_detail">
+            					<h3>全新积分使用模式</h3>
+            					<p>您的积分将可以直接免费在积分商城中全额兑换商品。</p>
+            					<p>积分商城将不断增加更多时尚美妆，品味生活，手机数码等商品供您0元兑换商品，无需额外加钱。</p>
+            					<p>积分可用于抽取大奖、增值服务等（相应功能完善中。。。）</p>
+            					<p>我们将会努力提升积分的用途和价值，让您的积分更加金贵；</p>
+            				</div>
+            				<div class="state_detail">
+            					<h3>积分获取方式：</h3>
+            					<p>1、注册活动进行期间，当您注册成为会员，即可获赠500积分；</p>
+            					<p>2、当您购买商品并收货完成时，即可获得相应金额的积分，具体获得数量可在产品详情页面查看；</p>
+            					<p>3、对购买过的产品进行点评或者发布口碑可获得积分；</p>
+            					<p>4、通过参与日常活动如：每日签到、参与互动等可获得积分（相应功能完善中。。。）；</p>
+            					<p>5、更多积分获取方式敬请期待。。。</p>
+            				</div>
+            				<div class="state_detail">
+            					<h3>会员获得积分的加成比例</h3>
+            					<p>会员消费时形同会根据您的会员等级额外获得1.2倍-2.5倍的积分返利特权</p>
+            					<p>普通会员：购物消费可获得约1：1比例的积分</p>
+            					<p>黄金会员：购物消费可获得普通会员x 1.2倍的积分</p>
+            					<p>白金会员：购物消费可获得普通会员x 1.5倍的积分</p>
+            					<p>钻石会员：购物消费可获得普通会员x 2.5倍的积分</p>
+							</div>
+            			</div>
+            		</div>
+            		<div class="clear"></div>
+            	</div>
+            </div>
+        </div>
+	<!--main end-->
+		<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+	</div>
+<!--FutureShop help end-->
+</body>
+</html>
+<script src="themes/futureshop/js/jq/jquery1.42.min.js"></script>
+<script src="themes/futureshop/js/user_down.js"></script>

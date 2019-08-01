@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+	<title>FutureShop 首页</title>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/banner.css"/>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/footer.css"/>
+	{* 包含脚本文件 *}
+	{insert_scripts files='common.js,index.js'}
+</head>
+<body>
+<!--FutureShop 首页 start-->
+	<div id="container">
+	<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+	<!--main start-->
+		<div class="main">
+		   <!-- banner动画 S-->
+        <div class="banner">
+            <div id="banner_tabs" class="flexslider">
+                <ul class="slides">
+	                <li>
+	                    <a href="javascript:void(0);">
+	                        <img style="background: url(themes/futureshop/images/banner.jpg) no-repeat center;" src="themes/futureshop/images/alpha.png">
+                        </a>
+                    </li>
+                    <li>
+	                    <a href="javascript:void(0);">
+	                        <img style="background: url(themes/futureshop/images/xdl.jpg) no-repeat center;" src="themes/futureshop/images/alpha.png">
+                        </a>
+                    </li>
+                    <li>	
+	                    <a href="javascript:void(0);">
+	                        <img style="background: url(themes/futureshop/images/lzm.jpg) no-repeat center;" src="themes/futureshop/images/alpha.png">
+	                    </a>
+	                </li>
+                </ul>
+                <ul class="flex-direction-nav flex-prev_next">
+                    <li><a class="flex-prev" href="javascript:;">Previous</a></li>
+                    <li><a class="flex-next" href="javascript:;">Next</a></li>
+                </ul>
+                <ul id="bannerCtrl" class="flex-control-nav flex-control-paging">
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- banner动画 E-->
+        <!-- 产品 start -->
+        <div class="FS_product">
+        	<div class="product">
+        		<div class="nows_product">
+        			<div class="clear"></div>
+        			<ul>
+        				<li>
+        					<p class="new"><span>新品</span></p>
+        					<p class="pro_img"><a href="#"><img src="themes/futureshop/images/product_01.png"/></a></p>
+        					<p>小度i耳目 （iermu）720P高清 WiFi 云</p>
+        					<p class="evaluate"><img src="themes/futureshop/images/star_05.png"/><i>(64)</i><span>￥399</span></p>
+        				</li>
+        				<li>
+        					<p class="new"><span>新品</span></p>
+        					<p class="pro_img"><a href="#"><img src="themes/futureshop/images/product_02.png"/></a></p>
+        					<p>小度i耳目 （iermu）720P高清 WiFi 云</p>
+        					<p class="evaluate"><img src="themes/futureshop/images/star_05.png"/><i>(64)</i><span>￥399</span></p>
+        				</li>
+        				<li class="no_m_r">
+        					<p class="new"><span>新品</span></p>
+        					<p class="pro_img"><a href="#"><img src="themes/futureshop/images/product_06.png"/></a></p>
+        					<p>小度i耳目 （iermu）720P高清 WiFi 云</p>
+        					<p class="evaluate"><img src="themes/futureshop/images/star_05.png"/><i>(64)</i><span>￥399</span></p>
+        				</li>
+        				
+        			</ul>
+        		</div>
+        		<div class="nows_product">
+        			<div class="goods_top">
+        				<h3>手机数码</h3>
+        				<p>
+        					<a href="#">iphone</a>丨
+							<a href="#">小米</a>丨
+							<a href="#">三星</a>丨
+							<a href="#" class="no_m_r">华为</a>
+    					</p>
+        			</div>
+        			<div class="clear"></div>
+        			<ul>
+        				<li>
+        					<p><span>&nbsp;</span></p>
+        					<p class="pro_img"><a href="#"><img src="themes/futureshop/images/product_01.png"/></a></p>
+        					<p>小度i耳目 （iermu）720P高清 WiFi 云</p>
+        					<p class="evaluate"><img src="themes/futureshop/images/star_05.png"/><i>(64)</i><span>￥399</span></p>
+        				</li>
+        				<li>
+        					<p class="new"><span>新品</span></p>
+        					<p class="pro_img"><a href="#"><img src="themes/futureshop/images/product_02.png"/></a></p>
+        					<p>小度i耳目 （iermu）720P高清 WiFi 云</p>
+        					<p class="evaluate"><img src="themes/futureshop/images/star_05.png"/><i>(64)</i><span>￥399</span></p>
+        				</li>
+        				<li class="no_m_r">
+        					<p><span>&nbsp;</span></p>
+        					<p class="pro_img"><a href="#"><img src="themes/futureshop/images/product_01.png"/></a></p>
+        					<p>小度i耳目 （iermu）720P高清 WiFi 云</p>
+        					<p class="evaluate"><img src="themes/futureshop/images/star_05.png"/><i>(64)</i><span>￥399</span></p>
+        				</li>
+        			</ul>
+        		</div>
+        		<div class="nows_product">
+        			<div class="goods_top">
+        				<h3>电脑办公</h3>
+        				<p>
+        					<a href="#">笔记本</a>丨
+							<a href="#">平板</a>丨
+							<a href="#" class="no_m_r">无线路由</a>
+    					</p>
+        			</div>
+        			<div class="clear"></div>
+        			<ul>
+        				<li>
+        					<p class="new"><span>新品</span></p>
+        					<p class="pro_img"><a href="#"><img src="themes/futureshop/images/product_01.png"/></a></p>
+        					<p>小度i耳目 （iermu）720P高清 WiFi 云</p>
+        					<p class="evaluate"><img src="themes/futureshop/images/star_05.png"/><i>(64)</i><span>￥399</span></p>
+        				</li>
+        				<li>
+        					<p class="new"><span>新品</span></p>
+        					<p class="pro_img"><a href="#"><img src="themes/futureshop/images/product_02.png"/></a></p>
+        					<p>小度i耳目 （iermu）720P高清 WiFi 云</p>
+        					<p class="evaluate"><img src="themes/futureshop/images/star_05.png"/><i>(64)</i><span>￥399</span></p>
+        				</li>
+        				<li class="no_m_r">
+        					<p class="new"><span>新品</span></p>
+        					<p class="pro_img"><a href="#"><img src="themes/futureshop/images/product_01.png"/></a></p>
+        					<p>小度i耳目 （iermu）720P高清 WiFi 云</p>
+        					<p class="evaluate"><img src="themes/futureshop/images/star_05.png"/><i>(64)</i><span>￥399</span></p>
+        				</li>
+        				
+        			</ul>
+        		</div>
+        		<div class="nows_product">
+        			<div class="goods_top">
+        				<h3>智能家居</h3>
+        				<p>
+        					<a href="#">智能家电</a>丨
+							<a href="#" class="no_m_r">娱乐影音</a>
+    					</p>
+        			</div>
+        			<div class="clear"></div>
+        			<ul>
+        				<li>
+        					<p class="new"><span>新品</span></p>
+        					<p class="pro_img"><a href="#"><img src="themes/futureshop/images/product_01.png"/></a></p>
+        					<p>小度i耳目 （iermu）720P高清 WiFi 云</p>
+        					<p class="evaluate"><img src="themes/futureshop/images/star_05.png"/><i>(64)</i><span>￥399</span></p>
+        				</li>
+        				<li>
+        					<p class="new"><span>新品</span></p>
+        					<p class="pro_img"><a href="#"><img src="themes/futureshop/images/product_02.png"/></a></p>
+        					<p>小度i耳目 （iermu）720P高清 WiFi 云</p>
+        					<p class="evaluate"><img src="themes/futureshop/images/star_05.png"/><i>(64)</i><span>￥399</span></p>
+        				</li>
+        				<li class="no_m_r">
+        					<p class="new"><span>新品</span></p>
+        					<p class="pro_img"><a href="#"><img src="themes/futureshop/images/product_01.png"/></a></p>
+        					<p>小度i耳目 （iermu）720P高清 WiFi 云</p>
+        					<p class="evaluate"><img src="themes/futureshop/images/star_05.png"/><i>(64)</i><span>￥399</span></p>
+        				</li>
+        				
+        			</ul>
+        		</div>
+        	</div>
+        </div>
+        <!-- 产品 end -->
+
+        <!-- 合作伙伴 start -->
+        <div class="partners">
+        	<div class="partners_link">
+        		<p>
+        			<a href="#"><img src="themes/futureshop/images/partner_01.gif"/></a>
+        			<a href="#"><img src="themes/futureshop/images/partner_02.gif"/></a>
+        			<a href="#"><img src="themes/futureshop/images/partner_03.gif"/></a>
+        			<a href="#"><img src="themes/futureshop/images/partner_04.gif"/></a>
+        			<a href="#"><img src="themes/futureshop/images/partner_05.gif"/></a>
+        			<a href="#"><img src="themes/futureshop/images/partner_06.gif"/></a>
+        			<a href="#"><img src="themes/futureshop/images/partner_07.gif"/></a>
+        			<a href="#"><img src="themes/futureshop/images/partner_08.gif"/></a>
+        		</p>
+        	</div>
+        </div>
+        <!-- 合作伙伴 end -->
+	</div>
+	<!--main end-->
+		<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+	</div>
+<!--FutureShop 首页 end-->
+</body>
+</html>
+<script src="themes/futureshop/js/jq/jquery1.42.min.js"></script>
+<script src="themes/futureshop/js/slider.js"></script>
+<script src="themes/futureshop/js/bannerslide.js"></script>
+<script src="themes/futureshop/js/user_down.js"></script>

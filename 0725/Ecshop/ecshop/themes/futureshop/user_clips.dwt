@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FutureShop user_center</title>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/user_center.css"/>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/footer.css"/>
+    {* 包含脚本文件 *}
+    {insert_scripts files='common.js,index.js'}
+</head>
+<body>
+<!--FutureShop user_center start-->
+	<div id="container">
+        <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+	<!--main start-->
+		<div class="main">
+            <div style="width: 1200px; margin: 20px auto 0;">
+                <!--	当前位置-->
+                <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+            </div>
+            <div class="user_center">
+            	<div class="center_list">
+                    <div class="user_nav">
+                        <ul>
+                            <li><a href="#">用户中心</a></li>
+                            <li><a href="#" class="user_current">我的订单 <span>&gt;</span></a></li>
+                            <li><a href="#">资金管理</a></li>
+                            <li><a href="#">我的地址</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">我的收藏</a></li>
+                            <li><a href="#">我的评论</a></li>
+                            <li><a href="#">我的留言</a></li>
+                        </ul>
+                        <p><a href="#">退出</a></p>
+                    </div>
+                    <div class="center_content">
+                        <h2>我的订单</h2>
+                        <div class="order_title">
+                            <ul>
+                                <li class="order_icon">订单号</li>
+                                <li class="univalence">单价</li>
+                                <li class="goods_number">数量</li>
+                                <li class="order_total">订单总额</li>
+                                <li class="order_state">订单状态</li>
+                                <li class="operation">操作</li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="goods_order">
+                            <table>
+                                <tr class="order_title" valign="top">
+                                    <td colspan="6">
+                                        <span>订单编号:15015615646541</span>
+                                        <span>订单时间:2016-1-13 14:20:16</span>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td class="order_number no_border_r">
+                                        <div class="goods_img">
+                                            <a href="#"><img src="themes/futureshop/images/good_order_01.png"/></a>
+                                        </div>
+                                        <div class="order_description">
+                                            <p class="goods_n"><a href="#">JAWBONE UP 24智能手环黑色S号</a></p>
+                                            <p class="goods_t">
+                                                <span>颜色:黑色</span>
+                                                <span>规格:S号</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td class="univalence no_border_r no_border_l">￥948.00</td>
+                                    <td class="goods_number no_border_l">1</td>
+                                    <td class="order_total">￥948.00</td>
+                                    <td class="order_state">
+                                        <p class="goods_current">等待支付</p>
+                                        <p>订单跟踪</p>
+                                    </td>
+                                    <td class="operation">
+                                        <p class="pay_now"><a href="#">立即付款</a></p>
+                                        <p><a href="pay_detail">详情</a></p>
+                                        <p><a href="off_order">取消订单</a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr class="order_title" valign="top">
+                                    <td colspan="6">
+                                        <span>订单编号:1501561554651</span>
+                                        <span>订单时间:2016-1-13 14:20:16</span>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td class="order_number no_border_r">
+                                        <div class="goods_img">
+                                            <a href="#"><img src="themes/futureshop/images/good_order_02.png"/></a>
+                                        </div>
+                                        <div class="order_description">
+                                            <p class="goods_n"><a href="#">丁盯智能门磁经典版 黑色</a></p>
+                                            <p class="goods_t">
+                                                <span>颜色:黑色</span>
+                                                <span>规格:标准</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td class="univalence no_border_r no_border_l">￥199.00</td>
+                                    <td class="goods_number no_border_l">1</td>
+                                    <td class="order_total" rowspan="2" >￥258.00</td>
+                                    <td class="order_state" rowspan="2">
+                                        <p class="goods_current">等待支付</p>
+                                        <p>订单跟踪</p>
+                                    </td>
+                                    <td class="operation" rowspan="2">
+                                        <p class="pay_now"><a href="#">立即付款</a></p>
+                                        <p><a href="pay_detail">详情</a></p>
+                                        <p><a href="off_order">取消订单</a></p>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td class="order_number no_border_r">
+                                        <div class="goods_img">
+                                            <a href="#"><img src="themes/futureshop/images/good_order_03.png"/></a>
+                                        </div>
+                                        <div class="order_description">
+                                            <p class="goods_n"><a href="#">云麦 好轻mini体脂秤 白色</a></p>
+                                            <p class="goods_t">
+                                                <span>颜色:白色</span>
+                                                <span>规格:标准版</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td class="univalence no_border_r no_border_l">￥59.00</td>
+                                    <td class="goods_number no_border_l">1</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="to_shoppingcar">
+                            <p>还木有订单哦，赶紧去</p>
+                            <p><a href="#">购物吧~</a></p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+	<!--main end-->
+        <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+	</div>
+<!--FutureShop user_center end-->
+</body>
+</html>
+<script src="themes/futureshop/js/jq/jquery1.42.min.js"></script>
+<script src="themes/futureshop/js/user_down.js"></script>

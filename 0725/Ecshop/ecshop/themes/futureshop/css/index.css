@@ -1,0 +1,30 @@
+/*首页 main样式*/
+
+/*banner 样式*/
+.banner{background:#f4f4f4;box-shadow:0 0 5px #ccc;margin-bottom:20px;margin-top:2px;}
+.banner_slide{width:1200px;margin:0 auto;padding:0 10px;}
+
+/*产品样式*/
+.FS_product{overflow:hidden;border-bottom:1px solid #eaeaea;padding-bottom:10px;}
+.product{width:1200px;margin:0 auto;padding:0 10px;margin-bottom:20px;}
+.goods_top{padding-bottom:10px;margin-bottom:10px;overflow:hidden;border-bottom:1px solid #eaeaea;}
+.goods_top h3{float:left;color:#414141;}
+.goods_top p{float:right;color:#f4f4f4;}
+.goods_top p a{color:#999;margin:0 12px;}
+.goods_top p .no_m_r{margin-right:0;}
+.nows_product{margin-bottom:40px;}
+.nows_product ul{overflow:hidden;}
+.nows_product ul li{float:left;width:380px;box-shadow:0px 0px 15px #ccc inset;margin-right:30px;}
+.nows_product ul .no_m_r{margin-right:0;}
+.nows_product ul li p{padding:10px 0 0 20px;}
+.new{line-height:48px;}
+.new span{display:block;background:#e71d26;width:48px;line-height:20px;text-align:center;color:#fff;}
+.nows_product ul li .pro_img{text-align:center;margin-bottom:55px;height:240px;line-height:240px;}
+.nows_product ul li .evaluate{margin-bottom:20px;margin-right:40px;}
+.evaluate i{font-style:normal;color:#666;margin-left:10px;}
+.evaluate span{float:right;}
+
+/*合作伙伴 样式*/
+.partners_link{width:1200px;margin:0 auto;padding:0 10px;}
+.partners_link p{text-align:center;margin:80px 0;}
+.partners_link p a{margin:0 30px;}

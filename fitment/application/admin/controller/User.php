@@ -54,8 +54,10 @@
         }
 
         // 修改密码页面
-        public function changePassword()
+        public function changePassword($id)
         {
+            $info = UserModel::where('u_id',$id)->find();
+            $this->assign('info',$info);
             return $this->fetch();
         }
 

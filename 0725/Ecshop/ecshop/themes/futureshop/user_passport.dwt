@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FutureShop 登录</title>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/user_login.css"/>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/footer.css"/>
+	{* 包含脚本文件 *}
+	{insert_scripts files='common.js,index.js'}
+</head>
+<body>
+<!--FutureShop 登录 start-->
+	<div id="container">
+	<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+	<!--main start-->
+		<div class="main">
+            <div class="FS_login">
+				<div style="width: 1200px; margin: 20px auto 0;">
+					<!--	当前位置-->
+					<!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+				</div>
+                <div class="user_login">
+					<!-- {if $action eq 'login'} -->
+                    <div class="login_list">
+                        <div class="login_left">
+                            <h2><span>用户登录</span></h2>
+                            <form action="user.php" method="post" onSubmit="return userLogin()">
+                                <p class="username">
+									<span>{$lang.label_username}</span>
+									<input type="text" name="username" placeholder="用户名"/>
+								</p>
+
+                                <p>
+									<span>{$lang.label_password}</span>
+									<input type="password" name="password" placeholder="密码"/>
+								</p>
+
+								<!-- 判断是否启用验证码{if $enabled_captcha} -->
+								<p>
+									<span align="right">{$lang.comment_captcha}</span>
+									<input type="text" name="captcha" class="inputBg" />
+										<img src="captcha.php?is_login=1&{$rand}" alt="captcha" style="vertical-align: middle;cursor: pointer;" onClick="this.src='captcha.php?is_login=1&'+Math.random()" />
+								</p>
+								<!--{/if}-->
+
+                                <p class="check">
+									<span>&nbsp;</span>
+									<input type="checkbox" value="1" name="remember" id="remember"/><label for="remember">{$lang.remember}</label>
+								</p>
+
+                                <p class="dosubmit">
+									<span>&nbsp;</span>
+									<input type="hidden" name="act" value="act_login" />
+									<input type="submit" name="submit" class="us_Submit" value="立即登录"/>
+								</p>
+
+                            </form>
+                        </div>
+                        <div class="login_right">
+                            <p>没有账号？</p>
+                            <p><a href="#">立即注册</a></p>
+                        </div>
+						<!--{/if}-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+	<!--main end-->
+	<!--footer start-->
+		<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+	</div>
+<!--FutureShop 登录 end-->
+</body>
+</html>
+<script src="themes/futureshop/js/jq/jquery1.42.min.js"></script>
+<script src="themes/futureshop/js/user_down.js"></script>

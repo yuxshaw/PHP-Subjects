@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FutureShop product</title>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/product.css"/>
+	<link rel="stylesheet" type="text/css" href="themes/futureshop/css/footer.css"/>
+    {* 包含脚本文件 *}
+    {insert_scripts files='common.js,index.js'}
+</head>
+<body>
+<!--FutureShop product start-->
+	<div id="container">
+        <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+	<!--main start-->
+		<div class="main">
+            <div class="FS_product">
+            	<div class="current">
+            		<div class="current_detail">
+            			<p>当前位置:<a href="index.html">首页</a> &gt; <a href="#">智能家居</a> &gt; 小度i耳目 （iermu）720P高清 WiFi 云摄像头 88HDB </p>
+            		</div>
+            	</div>
+                <div class="product_show">
+                    <div class="p_show_left">
+                        <p class="show_img">
+                            <a href="#"><img src="images/product_01.png"/></a>
+                        </p>
+                        <ul class="show_min_img">
+                            <li>   
+                                <a href="#"><img src="themes/futureshop/images/product_min_01.png"/></a>
+                            </li>
+                            <li >
+                                <a href="#"><img src="themes/futureshop/images/product_min_02.png"/></a>
+                            </li>
+                            <li class="select_now">
+                                <a href="#"><img src="themes/futureshop/images/product_min_03.png"/></a>
+                            </li>
+                        </ul>
+                        <p class="icon_l_r">
+                            <a href="#"><img class="show_left" src="themes/futureshop/images/show_left.png"/></a>
+                            <a href="#"><img class="show_right" src="themes/futureshop/images/show_right.png"/></a>
+                        </p>
+                        <p class="link_zan">
+                            <a href="#"><img src="themes/futureshop/images/zan.png"/></a>
+                            <a href="#"><img src="themes/futureshop/images/fenxiang.png"/></a>
+                        </p>
+                    </div>
+                    <div class="p_show_right">
+                        <h2>小度i耳目 （iermu）720P高清 WiFi 云摄像头 88HDB</h2>
+                        <div class="star_appraise">
+                            <div class="star">
+                                <p></p>              
+                            </div>
+                            <p>共<span>1</span>条购买评价</p>
+                        </div>
+                        <div class="clear"></div>
+                        <p class="account">图像质量较优秀，延迟较低，采用百度云直播、云存储，移动侦测录像。自带mic，双向对讲。摄像头重量很轻方便安装。</p>
+                        <div class="goods_detail">
+                            <p><span class="goods_type">价格</span> <span class="goods_pirce">￥388.00</span></p>
+                            <p><span class="goods_type">型号</span> <span class="goods_model">黑色标准版</span></p>
+                            <p><span class="goods_type">数量</span><a href="javascript:;" class="sub">-</a><span class="count">1</span><a href="javascript:;" class="add">+</a></p>
+                            <p class="buy_car"><a href="#" class="buy">立即购买</a><a href="#" class="shopping_car">加入购物车</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="goods_detail_nav">
+                    <div class="goods_nav">
+                        <p>
+                            <a href="javascript:;" class="click_goods goods_parameters click_s">商品详情</a>
+                            <a href="javascript:;" class="click_goods goods_description">商品参数</a>
+                            <a href="#user_commnet">用户评论<span>(77)</span></a>
+                            <a href="#sales_log">销售记录<span>(45)</span></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="goods_record">
+                    <div class="sales_status">
+                        <div class="sales_history">
+                            <h2>销售排行</h2>
+                            <ul>
+                                <li>
+                                    <div class="goods_img">
+                                        <a href="#"><img src="themes/futureshop/images/product_01.png"/></a>
+                                    </div>
+                                    <div class="goods_info">
+                                        <p class="gd_title"><a href="#">小度i耳目 （iermu）720P...</a></p>
+                                        <p class="gd_price">￥388.00</p>
+                                        <p class="gd_sale">已售出<span>6</span>笔</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="goods_img">
+                                        <a href="#"><img src="themes/futureshop/images/product_01.png"/></a>
+                                    </div>
+                                    <div class="goods_info">
+                                        <p class="gd_title"><a href="#">小度i耳目 （iermu）720P...</a></p>
+                                        <p class="gd_price">￥388.00</p>
+                                        <p class="gd_sale">已售出<span>6</span>笔</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="goods_img">
+                                        <a href="#"><img src="themes/futureshop/images/product_01.png"/></a>
+                                    </div>
+                                    <div class="goods_info">
+                                        <p class="gd_title"><a href="#">小度i耳目 （iermu）720P...</a></p>
+                                        <p class="gd_price">￥388.00</p>
+                                        <p class="gd_sale">已售出<span>6</span>笔</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="goods_img">
+                                        <a href="#"><img src="themes/futureshop/images/product_01.png"/></a>
+                                    </div>
+                                    <div class="goods_info">
+                                        <p class="gd_title"><a href="#">小度i耳目 （iermu）720P...</a></p>
+                                        <p class="gd_price">￥388.00</p>
+                                        <p class="gd_sale">已售出<span>6</span>笔</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p><a href="#">查看更多...</a></p>
+                        </div>
+                        <div class="browse_history">
+                            <h2>浏览历史<a href="#" class="clear_browse">清空</a></h2>
+                            <ul>
+                                <li>
+                                    <div class="goods_img">
+                                        <a href="#"><img src="themes/futureshop/images/product_01.png"/></a>
+                                    </div>
+                                    <div class="goods_info">
+                                        <p class="gd_title"><a href="#">小度i耳目 （iermu）720P...</a></p>
+                                        <p class="gd_price">￥388.00</p>
+                                        <p class="gd_sale">已售出<span>6</span>笔</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="goods_img">
+                                        <a href="#"><img src="themes/futureshop/images/product_01.png"/></a>
+                                    </div>
+                                    <div class="goods_info">
+                                        <p class="gd_title"><a href="#">小度i耳目 （iermu）720P...</a></p>
+                                        <p class="gd_price">￥388.00</p>
+                                        <p class="gd_sale">已售出<span>6</span>笔</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="goods_img">
+                                        <a href="#"><img src="themes/futureshop/images/product_01.png"/></a>
+                                    </div>
+                                    <div class="goods_info">
+                                        <p class="gd_title"><a href="#">小度i耳目 （iermu）720P...</a></p>
+                                        <p class="gd_price">￥388.00</p>
+                                        <p class="gd_sale">已售出<span>6</span>笔</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="goods_img">
+                                        <a href="#"><img src="themes/futureshop/images/product_01.png"/></a>
+                                    </div>
+                                    <div class="goods_info">
+                                        <p class="gd_title"><a href="#">小度i耳目 （iermu）720P...</a></p>
+                                        <p class="gd_price">￥388.00</p>
+                                        <p class="gd_sale">已售出<span>6</span>笔</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_record">
+                        <div class="description">
+                            <p><img src="themes/futureshop/images/goods_record_01.jpg"/></p>
+                            <p><img src="themes/futureshop/images/goods_record_02.jpg"/></p>
+                            <p><img src="themes/futureshop/images/goods_record_03.jpg"/></p>
+                        </div>
+                        <div class="parameters">
+                            <table>
+                                <tr>
+                                    <td class="par_left">品牌</td>
+                                    <td class="par_right">小度i耳目</td>
+                                </tr>
+                                <tr>
+                                    <td class="par_left">型号</td>
+                                    <td class="par_right">88HDB</td>
+                                </tr>
+                                <tr>
+                                    <td class="par_left">上市时间</td>
+                                    <td class="par_right">2014年1月13日</td>
+                                </tr>
+                                <tr>
+                                    <td class="par_left">颜色</td>
+                                    <td class="par_right">黑</td>
+                                </tr>
+                                <tr>
+                                    <td class="par_left">外型材质</td>
+                                    <td class="par_right">金属</td>
+                                </tr>
+                                <tr>
+                                    <td class="par_left">尺寸</td>
+                                    <td class="par_right">主体外径60MM,厚度35MM</td>
+                                </tr>
+                                <tr>
+                                    <td class="par_left">重量</td>
+                                    <td class="par_right">66g</td>
+                                </tr>
+                                <tr>
+                                    <td class="par_left">镜头光圈</td>
+                                    <td class="par_right">3.6mm</td>
+                                </tr>
+                                <tr>
+                                    <td class="par_left">图像分辨率</td>
+                                    <td class="par_right">1280*720</td>
+                                </tr>
+                                <tr>
+                                    <td class="par_left">视频帧率</td>
+                                    <td class="par_right">最大30帧/秒</td>
+                                </tr>
+                                <tr>
+                                    <td class="par_left">感光元件尺寸</td>
+                                    <td class="par_right">1/3’CMOS</td>
+                                </tr>
+                                <tr>
+                                    <td class="par_left">电源供应</td>
+                                    <td class="par_right">DC5V±10%</td>
+                                </tr>
+                                <tr>
+                                    <td class="par_left">WiFi无线网络</td>
+                                    <td class="par_right">支持802.11b/g/n/x无线协议</td>
+                                </tr>
+                                <tr>
+                                    <td class="par_left">红外夜视</td>
+                                    <td class="par_right">支持</td>
+                                </tr>
+                                <tr>
+                                    <td class="par_left">语音对讲</td>
+                                    <td class="par_right">支持</td>
+                                </tr>
+                                <tr>
+                                    <td class="par_left">电源适配器</td>
+                                    <td class="par_right">5V 2A</td>
+                                </tr>
+                                <tr>
+                                    <td class="par_left">USB电源线</td>
+                                    <td class="par_right">3米</td>
+                                </tr>
+                                <tr>
+                                    <td class="par_left">说明书</td>
+                                    <td class="par_right">有</td>
+                                </tr>
+                                <tr>
+                                    <td class="par_left">保修卡</td>
+                                    <td class="par_right">有</td>
+                                </tr>
+                                <tr>
+                                    <td class="par_left">电源功耗</td>
+                                    <td class="par_right">3W MAX</td>
+                                </tr>
+                                <tr>
+                                    <td class="par_left">工作环境</td>
+                                    <td class="par_right">-5°C至55°C</td>
+                                </tr>
+                                <tr>
+                                    <td class="par_left">其他配件</td>
+                                    <td class="par_right">云台</td>
+                                </tr>
+                                <tr>
+                                    <td class="par_left">保修</td>
+                                    <td class="par_right">一年</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <a name="user_commnet"></a>
+                        <div class="user_comment">
+                            <h2>用户评论(<span>77</span>)</h2>
+                            <div class="comment_list">
+                                <div class="user_icon">
+                                    <img src="themes/futureshop/images/user_icon.png" alt="用户头像"/>
+                                </div>
+                                <div class="comment_info">
+                                    <p><span class="username">user1</span><span class="comment_time">2016-1-13 09:34:26</span></p>
+                                    <p class="comment_content">摄像头直接接入电源，灯不亮；但是用usb接口接电脑，灯会亮。电源插头是不是坏了？</p>
+                                    <p class="admin_back">管理员回复：</p>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="comment_list">
+                                <div class="user_icon">
+                                    <img src="themes/futureshop/images/user_icon.png" alt="用户头像"/>
+                                </div>
+                                <div class="comment_info">
+                                    <p><span class="username">user1</span><span class="comment_time">2016-1-13 09:34:26</span></p>
+                                    <p class="comment_content">摄像头直接接入电源，灯不亮；但是用usb接口接电脑，灯会亮。电源插头是不是坏了？</p>
+                                    <p class="admin_back">管理员回复：</p>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="comment_list">
+                                <div class="user_icon">
+                                    <img src="themes/futureshop/images/user_icon.png" alt="用户头像"/>
+                                </div>
+                                <div class="comment_info">
+                                    <p><span class="username">user1</span><span class="comment_time">2016-1-13 09:34:26</span></p>
+                                    <p class="comment_content">摄像头直接接入电源，灯不亮；但是用usb接口接电脑，灯会亮。电源插头是不是坏了？</p>
+                                    <p class="admin_back">管理员回复：</p>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="page">
+                                <p>
+                                    <a href="#">&lt;</a>
+                                    <a href="#">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#" class="current">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#">...</a>
+                                    <a href="#">8</a>
+                                    <a href="#">&gt;</a>
+                                </p>
+                            </div>
+                            <div class="comment_form">
+                                <form action="#" method="post">
+                                    <p class="comment_area">
+                                        <textarea name="comment"></textarea>
+                                    </p>
+                                    <p class="count_sub">
+                                        还能输入<span class="font_count">150</span>个字
+                                        <input type="submit" name="dosubmit" value="提交"/>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                        <a name="sales_log"></a>
+                        <div class="sales_log">
+                            <h2>销售记录(<span>45</span>)</h2>
+                            <div class="log_detail">
+                                <p class="log_title">
+                                    <span class="buyer">买家</span>
+                                    <span class="buy_price">购买价</span>
+                                    <span class="buy_count">数量</span>
+                                    <span class="buy_time">购买时间</span>
+                                </p>
+                                <div class="clear"></div>
+                                <p class="buy_detail">
+                                    <span class="buyer">user</span>
+                                    <span class="buy_price">￥388.00</span>
+                                    <span class="buy_count">1</span>
+                                    <span class="buy_time">2016-1-13 10:23:56</span>
+                                </p>  
+                                <div class="clear"></div>
+
+                                <p class="buy_detail">
+                                    <span class="buyer">user</span>
+                                    <span class="buy_price">￥388.00</span>
+                                    <span class="buy_count">1</span>
+                                    <span class="buy_time">2016-1-13 10:23:56</span>
+                                </p>
+                                <div class="clear"></div>
+
+                                <p class="buy_detail">
+                                    <span class="buyer">user</span>
+                                    <span class="buy_price">￥388.00</span>
+                                    <span class="buy_count">1</span>
+                                    <span class="buy_time">2016-1-13 10:23:56</span>
+                                </p>
+                                <div class="clear"></div>
+
+                                <p class="buy_detail">
+                                    <span class="buyer">user</span>
+                                    <span class="buy_price">￥388.00</span>
+                                    <span class="buy_count">1</span>
+                                    <span class="buy_time">2016-1-13 10:23:56</span>
+                                </p>
+                                <div class="clear"></div>
+                               
+                            </div>
+                            <div class="page">
+                                <p>
+                                    <a href="#">&lt;</a>
+                                    <a href="#">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#" class="current">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#">...</a>
+                                    <a href="#">8</a>
+                                    <a href="#">&gt;</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	<!--main end-->
+        <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+	</div>
+<!--FutureShop product end-->
+</body>
+</html>
+<script src="themes/futureshop/js/jq/jquery1.42.min.js"></script>
+<script src="themes/futureshop/js/user_down.js"></script>
+<script src="themes/futureshop/js/goods_info.js"></script>

@@ -1,0 +1,18 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+{if $user_info}
+<li id="u_center" class="u_center">
+ <a href="javascript:;">{$user_info.username}<img id="select" src="themes/futureshop/images/select.gif"/></a>丨
+ <ul id="user_c" class="user_c">
+  <li><a href="user.php">{$lang.user_center}</a></li>
+  <li class="user_exit"><a href="user.php?act=logout">{$lang.user_logout}</a></li>
+ </ul>
+</li>
+{else}
+<li id="u_center" class="u_center">
+ <a href="user.php">请登录<img id="select" src="themes/futureshop/images/select.gif"/></a>丨
+ <ul id="user_c" class="user_c">
+  <li><a href="user.php">{$lang.user_center}</a></li>
+  <li class="user_exit"><a href="user.php?act=regiester">免费注册</a></li>
+ </ul>
+</li>
+{/if}

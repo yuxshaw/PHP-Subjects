@@ -1,0 +1,72 @@
+<!--header start-->
+		<div class="header">
+			<div class="logo_help">
+				<div class="l_h_detail">
+					<div class="logo">
+						<a href="./index.html"><img src="themes/futureshop/images/future_logo.gif" alt="logo"/></a>
+					</div>
+					<div class="help">
+						<form>
+							<input name="keywords" type="text" id="keyword" value="{$search_keywords|escape}"/>
+							<img src="themes/futureshop/images/search.gif" alt="搜索"/>
+						</form>
+						<ul class="h_nav">
+                            {insert_scripts files='transport.js,utils.js'}
+                            {insert name='member_info'}
+							<li><a href="#">我的订单</a>丨</li>
+							<li class="shopcar">
+                                <!-- #BeginLibraryItem "/library/cart.lbi" --> {insert_scripts files='transport.js'}
+                                <img src="themes/futureshop/images/shoppingcar.png"/>{insert name='cart_info'}丨
+                            </li>
+							<li class="no_m_r"><a href="help.php">帮助中心</a></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+            <div class="FS_nav">
+                <div class="nav_list">
+                    <div class="select_goods">
+                        <p><img src="themes/futureshop/images/goods_all.png"/>所有商品分类</p>
+                        <div class="select_list">
+                            <ul>
+                                <li><a href="#">手机数码</a></li>
+                                <li>
+                                    <a href="#">电脑办公<span>&gt;</span></a>
+                                    <ul>
+                                        <li><a href="#"><span>&lt;</span>笔记本</a></li>
+                                        <li><a href="#"><span>&lt;</span>平板 </a></li>
+                                        <li><a href="#"><span>&lt;</span>无线路由</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">智能家居</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="../index.php"{if $navigator_list.config.index eq 1} class="cur"{/if}>{$lang.home}</a></li>
+                        <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav} -->
+                        <!-- {if $smarty.foreach.nav_middle_list.last}-->
+                        <li><a href="{$nav.url}"
+
+                            <!-- {if $nav.opennew eq 1} -->
+                            target="_blank"
+                            <!-- {/if} -->
+                            >{$nav.name}</a></li>
+                        <!-- {else} -->
+                        <li><a href="{$nav.url}"
+
+                            <!-- {if $nav.opennew eq 1} -->
+                            target="_blank"
+                            <!-- {/if} -->
+                            >{$nav.name}</a></li>
+                        <!-- {/if} -->
+                        <!-- {if $nav.active eq 1} -->
+                        <!-- {/if} -->
+                        <!-- {/foreach} -->
+                    </ul>
+                </div>
+            </div>
+		</div>
+	<!--header end-->

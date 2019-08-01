@@ -1,0 +1,43 @@
+/*首页 main样式*/
+/*screen 样式*/
+.select_product{line-height:60px;}
+.screen{width:1200px;margin:0 auto;}
+.screen ul li{float:left;padding-right:13px;padding-left:28px;border-left:1px solid #ebeff2;}
+.screen ul .bor_r{border-right:1px solid #ebeff2;}
+.screen ul li img{margin-left:25px;}
+.screen ul li a{color:#333;font-weight:bold;}
+
+.scree_up_down{width:1200px;padding:0 10px;text-align:right;margin:30px auto 15px;}
+.scree_up_down p{margin-right:8px;}
+.scree_up_down p span{margin-right:20px;}
+.click_d{color:#e71d26;}
+.scree_up_down p span img{margin-left:5px;}
+/*产品样式*/
+.FS_product{background:#f4f4f4;overflow:hidden;padding-bottom:10px;margin-bottom:60px;border:1px solid #ccc;}
+.product{width:1200px;margin:0 auto;padding:0 10px;margin-bottom:20px;}
+
+.nows_product{margin-bottom:40px;}
+.nows_product ul{overflow:hidden;}
+.nows_product ul li{background:#fff;float:left;width:380px;margin-bottom:30px;box-shadow:1px 0px 15px #ccc;margin-right:30px;}
+.nows_product ul .no_m_r{margin-right:0;}
+.nows_product ul li p{padding:10px 0 0 20px;}
+.new{line-height:48px;}
+.new span{display:block;background:#e71d26;width:48px;line-height:20px;text-align:center;color:#fff;}
+.nows_product ul li .pro_img{text-align:center;margin-bottom:55px;height:240px;line-height:240px;}
+.nows_product ul li .evaluate{margin-bottom:20px;margin-right:40px;}
+.evaluate i{font-style:normal;color:#666;margin-left:10px;}
+.evaluate span{float:right;}
+
+/*分页样式*/
+.page{width:1200px;margin:0 auto;padding:0 10px;text-align:center;margin-bottom:60px;}
+.page p a{border:1px solid #ccc;padding:5px 10px;background:#fff;color:#333;}
+.page p a:hover{background:#eaeaea;}
+.page p .check{background:#eaeaea;}
+
+
+/*筛选样式*/
+.screen>ul>li{position:relative;}
+.screen>ul>li>ul{display:none;position:absolute;background:#fff;border:1px solid #ebeff2;left:-1px;width:100%;}
+.screen >ul>li>ul>li{clear:both;padding:0;text-align:center;width:100%;border:none;}
+.screen>ul>li>ul>li>a{display:block;padding:10px 20px;line-height:20px;}
+.screen>ul>li>ul>li>a:hover{background:#ccc;}
