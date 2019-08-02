@@ -1,0 +1,31 @@
+<div id="banner_tabs" class="flexslider">
+    <ul class="slides">
+        <li>
+           <!-- <a href="javascript:void(0);">
+                <img style="background: url(themes/futureshop/images/banner.jpg) no-repeat center;" src="themes/futureshop/images/alpha.png">
+            </a>-->
+            {insert name='ads' id=1 num=1}
+        </li>
+        <li>
+            <!--<a href="javascript:void(0);">
+                <img style="background: url(themes/futureshop/images/xdl.jpg) no-repeat center;" src="themes/futureshop/images/alpha.png">
+            </a>-->
+            {insert name='ads' id=2 num=1}
+        </li>
+        <li>
+            <!--<a href="javascript:void(0);">
+                <img style="background: url(themes/futureshop/images/lzm.jpg) no-repeat center;" src="themes/futureshop/images/alpha.png">
+            </a>-->
+            {insert name='ads' id=3 num=1}
+        </li>
+    </ul>
+    <ul class="flex-direction-nav flex-prev_next">
+        <li><a class="flex-prev" href="javascript:;">Previous</a></li>
+        <li><a class="flex-next" href="javascript:;">Next</a></li>
+    </ul>
+    <ul id="bannerCtrl" class="flex-control-nav flex-control-paging">
+        <li><a></a></li>
+        <li><a></a></li>
+        <li><a></a></li>
+    </ul>
+</div>

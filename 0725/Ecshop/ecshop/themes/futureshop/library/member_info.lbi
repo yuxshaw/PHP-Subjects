@@ -12,7 +12,7 @@
  <a href="user.php">请登录<img id="select" src="themes/futureshop/images/select.gif"/></a>丨
  <ul id="user_c" class="user_c">
   <li><a href="user.php">{$lang.user_center}</a></li>
-  <li class="user_exit"><a href="user.php?act=regiester">免费注册</a></li>
+  <li class="user_exit"><a href="user.php?act=register">免费注册</a></li>
  </ul>
 </li>
 {/if}

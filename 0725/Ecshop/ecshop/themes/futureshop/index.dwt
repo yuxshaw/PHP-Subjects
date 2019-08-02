@@ -21,7 +21,7 @@
 		<div class="main">
 		   <!-- banner动画 S-->
         <div class="banner">
-            <div id="banner_tabs" class="flexslider">
+            <!--<div id="banner_tabs" class="flexslider">
                 <ul class="slides">
 	                <li>
 	                    <a href="javascript:void(0);">
@@ -33,7 +33,7 @@
 	                        <img style="background: url(themes/futureshop/images/xdl.jpg) no-repeat center;" src="themes/futureshop/images/alpha.png">
                         </a>
                     </li>
-                    <li>	
+                    <li>
 	                    <a href="javascript:void(0);">
 	                        <img style="background: url(themes/futureshop/images/lzm.jpg) no-repeat center;" src="themes/futureshop/images/alpha.png">
 	                    </a>
@@ -48,7 +48,9 @@
                     <li><a></a></li>
                     <li><a></a></li>
                 </ul>
-            </div>
+            </div>-->
+
+			<!-- #BeginLibraryItem "/library/index_banner.lbi" --><!-- #EndLibraryItem -->
         </div>
         <!-- banner动画 E-->
         <!-- 产品 start -->

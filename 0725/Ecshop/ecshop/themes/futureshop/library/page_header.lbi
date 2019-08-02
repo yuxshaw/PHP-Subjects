@@ -28,19 +28,29 @@
             <div class="FS_nav">
                 <div class="nav_list">
                     <div class="select_goods">
-                        <p><img src="themes/futureshop/images/goods_all.png"/>所有商品分类</p>
+                        <p><img style="cursor: pointer;" src="themes/futureshop/images/goods_all.png"/>所有商品分类</p>
                         <div class="select_list">
                             <ul>
-                                <li><a href="#">手机数码</a></li>
-                                <li>
-                                    <a href="#">电脑办公<span>&gt;</span></a>
+                                <!--{foreach from=$categories item=cat}-->
+                                <li><a href="{$cat.url}">{$cat.name|escape:html}</a>
+                                    <!--{if $cat.cat_id }-->
                                     <ul>
-                                        <li><a href="#"><span>&lt;</span>笔记本</a></li>
-                                        <li><a href="#"><span>&lt;</span>平板 </a></li>
-                                        <li><a href="#"><span>&lt;</span>无线路由</a></li>
+                                        <!--{foreach from=$cat.cat_id item=child}-->
+                                        <li>
+                                            <a class="cat2-link" href="{$child.url}">{$child.name|escape:html}</a>
+                                            <!--{if $child.cat_id }-->
+                                        <li>
+                                            <!--{foreach from=$child.cat_id item=childer}-->
+                                            <a href="{$childer.url}">{$childer.name|escape:html}</a>&nbsp;&nbsp;
+                                            <!--{/foreach}-->
+                                        </li>
+                                        <!-- {/if} -->
+                                        </li>
+                                        <!--{/foreach}-->
                                     </ul>
+                                    <!-- {/if} -->
                                 </li>
-                                <li><a href="#">智能家居</a></li>
+                                <!--{/foreach}-->
                             </ul>
                         </div>
                     </div>

@@ -1,0 +1,24 @@
+<ul>
+    <!--{foreach from=$categories item=cat}-->
+  <li><a href="{$cat.url}">{$cat.name|escape:html}</a>
+      <!--{if $cat.cat_id }-->
+      <ul>
+        <!--{foreach from=$cat.cat_id item=child}-->
+        <li>
+          <a class="cat2-link" href="{$child.url}">{$child.name|escape:html}</a>
+          <!--{if $child.cat_id }-->
+          <li>
+            <!--{foreach from=$child.cat_id item=childer}-->
+              <a href="{$childer.url}">{$childer.name|escape:html}</a>&nbsp;&nbsp;
+            <!--{/foreach}-->
+      </li>
+          <!-- {/if} -->
+        </li>
+        <!--{/foreach}-->
+      </ul>
+      <!-- {/if} -->
+  </li>
+    <!--{/foreach}-->
+</ul>
+
+ 
